@@ -156,6 +156,8 @@ body {
             font-family: OpenSans-Semibold;
             font-size: 18px;
             color: #FFFFFF;
+            display: inline-block;
+            vertical-align: middle;
         }
     }
     .background {
@@ -197,7 +199,7 @@ body {
                     font-size: 12px;
                     transition: all 0.3s ease-in-out;
                 }
-                img{
+                img {
                     transition: all 0.3s ease-in-out;
                 }
             }
@@ -215,6 +217,65 @@ body {
                 p {
                     font-family: OpenSans-Semibold;
                     opacity: #616161;
+                }
+            }
+        }
+        .agegroup {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            .grp {
+                display: inline-block;
+                text-align: center;
+                margin: 12px;
+                padding: 12px;
+                background: #FFFFFF;
+                box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
+                border-radius: 3px;
+                font-family: OpenSans;
+                font-size: 14px;
+                color: #A6A6A6;
+                transition: all 0.25s ease-in-out;
+            }
+            .zinda {
+                border: 1px solid #62BF6B;
+                box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
+                color: #61BE6B;
+            }
+        }
+        .jobgroup {
+            justify-content: center;
+            margin-top: 5vh;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .job {
+                margin: 12px;
+                img {
+                    transition: all 0.25s ease-in-out;
+                    opacity: 0.5;
+                    filter: grayscale(1);
+                }
+                p {
+                    margin-top: 10px;
+                    transition: all 0.25s ease-in-out;
+                    font-family: OpenSans;
+                    font-size: 12px;
+                    color: #B5B5B5;
+                }
+            }
+            .mera {
+                img {
+                    opacity: 1;
+                    filter: grayscale(0);
+                }
+                p {
+                    font-family: OpenSans-Semibold;
+                    color: #616161;
                 }
             }
         }

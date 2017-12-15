@@ -39,7 +39,7 @@ input:valid~label {
 
 input {
     background: transparent;
-    font-family: OpenSans;
+    font-family: 'OpenSans-Regular';
     font-size: 14px;
     color: #616161;
     width: 100%;

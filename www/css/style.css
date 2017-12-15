@@ -222,7 +222,7 @@ body {
       background: #FFFFFF;
       box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
       border-radius: 3px;
-      font-family: OpenSans;
+      font-family: 'OpenSans-Regular';
       font-size: 14px;
       color: #A6A6A6;
       transition: all 0.25s ease-in-out; }
@@ -251,7 +251,7 @@ body {
       .signup .background .jobgroup .job p {
         margin-top: 10px;
         transition: all 0.25s ease-in-out;
-        font-family: OpenSans;
+        font-family: 'OpenSans-Regular';
         font-size: 12px;
         color: #B5B5B5; }
     /* line 272, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
