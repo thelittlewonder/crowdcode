@@ -135,21 +135,23 @@ body {
     width: 25px;
     height: 4px;
     float: left;
+    transition: all 0.5s ease-out;
     margin: 0 auto;
     margin-bottom: 24px;
     background: white;
     border-radius: 100px; }
-  /* line 153, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 154, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .gradient h1 {
+    transition: all 0.5s ease-out;
     font-family: OpenSans-Semibold;
     font-size: 18px;
     color: #FFFFFF; }
 
-/* line 159, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+/* line 161, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .signup .background {
   background: #FAFAFA;
   border-radius: 10px; }
-  /* line 162, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 164, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .dead, .signup .background .alive {
     position: absolute;
     bottom: 0;
@@ -161,45 +163,70 @@ body {
     color: #A9A9A9;
     background: #F1F1F1;
     transition: all 0.1s ease-in; }
-  /* line 174, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 176, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .alive {
     color: #fff;
     background-color: #64C56E; }
-  /* line 179, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 181, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background h1 {
     margin-bottom: 5vh;
     font-family: OpenSans;
     font-size: 16px;
     color: #616161; }
-  /* line 185, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 187, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .sex {
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    /* line 190, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 192, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .gender {
       display: flex;
       flex-direction: column; }
-      /* line 193, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      /* line 195, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .sex .gender p {
         margin-top: 16px;
         font-size: 12px;
         transition: all 0.3s ease-in-out; }
-      /* line 198, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      /* line 200, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .sex .gender img {
         transition: all 0.3s ease-in-out; }
-    /* line 203, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 205, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .nay img {
       filter: grayscale(1);
       opacity: 0.6; }
-    /* line 207, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 209, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .nay p {
       font-family: OpenSans-Regular;
       color: #B5B5B5; }
-    /* line 213, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 215, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .yay p {
       font-family: OpenSans-Semibold;
       opacity: #616161; }
+  /* line 221, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .signup .background .agegroup {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; }
+    /* line 228, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    .signup .background .agegroup .grp {
+      display: inline-block;
+      text-align: center;
+      margin: 12px;
+      padding: 12px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
+      border-radius: 3px;
+      font-family: OpenSans;
+      font-size: 14px;
+      color: #A6A6A6; }
+    /* line 240, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    .signup .background .agegroup .zinda {
+      border: 1px solid #62BF6B;
+      box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
+      color: #61BE6B; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
 var gender = 'a';
 var email;
 var name;
-
+var allset = 0;
+var agegroup;
 //splash
 
 $(document).ready(function () {
@@ -152,10 +153,85 @@ var check = function () {
     if (flag1 + flag2 + flag3 === 3) {
         document.getElementById('chalo').classList.remove('dead');
         document.getElementById('chalo').classList.add('alive');
+        allset = 1;
     } else {
         document.getElementById('chalo').classList.remove('alive');
         document.getElementById('chalo').classList.add('dead');
     }
 };
 
-window.setInterval(check,1000);
+/*
+while (!allset) {
+    window.setInterval(check, 1000);
+}
+*/
+
+$('#chalo').hammer().on("tap", function () {
+    document.getElementById('chalo').classList.remove('alive');
+    document.getElementById('chalo').classList.add('dead');
+    $('.part').css('width', '40%');
+    $('.gradient h1').css('height', 0);
+    $('.gradient h1').html('Select your age group');
+    $('.gradient h1').css('height', 'auto');
+    $('#lmao').css('opacity', 0);
+    window.setTimeout(function () {
+        $('#lmao').remove();
+        $('.agegroup').css('display', 'block');
+    }, 300);
+    $('#chalo').attr('id', 'chalo2');
+});
+
+$('#g1').hammer().on('tap', function () {
+    document.getElementById('g1').classList.add('zinda');
+    document.getElementById('g2').classList.remove('zinda');
+    document.getElementById('g3').classList.remove('zinda');
+    document.getElementById('g4').classList.remove('zinda');
+    document.getElementById('g5').classList.remove('zinda');
+    document.getElementById('chalo2').classList.remove('dead');
+    document.getElementById('chalo2').classList.add('alive');
+});
+
+$('#g2').hammer().on('tap', function () {
+    document.getElementById('g2').classList.add('zinda');
+    document.getElementById('g1').classList.remove('zinda');
+    document.getElementById('g3').classList.remove('zinda');
+    document.getElementById('g4').classList.remove('zinda');
+    document.getElementById('g5').classList.remove('zinda');
+    document.getElementById('chalo2').classList.remove('dead');
+    document.getElementById('chalo2').classList.add('alive');
+});
+
+
+$('#g3').hammer().on('tap', function () {
+    document.getElementById('g3').classList.add('zinda');
+    document.getElementById('g2').classList.remove('zinda');
+    document.getElementById('g1').classList.remove('zinda');
+    document.getElementById('g4').classList.remove('zinda');
+    document.getElementById('g5').classList.remove('zinda');
+    document.getElementById('chalo2').classList.remove('dead');
+    document.getElementById('chalo2').classList.add('alive');
+});
+
+$('#g4').hammer().on('tap', function () {
+    document.getElementById('g4').classList.add('zinda');
+    document.getElementById('g2').classList.remove('zinda');
+    document.getElementById('g3').classList.remove('zinda');
+    document.getElementById('g1').classList.remove('zinda');
+    document.getElementById('g5').classList.remove('zinda');
+    document.getElementById('chalo2').classList.remove('dead');
+    document.getElementById('chalo2').classList.add('alive');
+});
+
+$('#g5').hammer().on('tap', function () {
+    document.getElementById('g5').classList.add('zinda');
+    document.getElementById('g2').classList.remove('zinda');
+    document.getElementById('g3').classList.remove('zinda');
+    document.getElementById('g4').classList.remove('zinda');
+    document.getElementById('g1').classList.remove('zinda');
+    document.getElementById('chalo2').classList.remove('dead');
+    document.getElementById('chalo2').classList.add('alive');
+});
+
+$('#chalo2').hammer().on('tap', function () {
+
+});

@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    overflow-y: hidden;
     background-color: #fafafa;
 }
 
@@ -54,7 +55,6 @@ body {
 
 //Onboarding
 .container {
-    height: 0;
     opacity: 0;
     margin-top: 15vh;
     padding: 16px;
@@ -124,7 +124,7 @@ body {
     }
 }
 
-//Onboarding
+//registration
 .signup {
     .gradient {
         .total {
@@ -140,6 +140,7 @@ body {
             width: 25px;
             height: 4px;
             float: left;
+            transition: all 0.5s ease-out;
             margin: 0 auto;
             margin-bottom: 24px;
             background: rgba(255, 255, 255, 1);
@@ -151,6 +152,7 @@ body {
         #65C86F 0%,
         #60BA69 100%);
         h1 {
+            transition: all 0.5s ease-out;
             font-family: OpenSans-Semibold;
             font-size: 18px;
             color: #FFFFFF;
@@ -159,5 +161,62 @@ body {
     .background {
         background: #FAFAFA;
         border-radius: 10px;
+        .dead {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-family: OpenSans-Semibold;
+            padding: 16px;
+            font-size: 20px;
+            color: #A9A9A9;
+            background: #F1F1F1;
+            transition: all 0.1s ease-in;
+        }
+        .alive {
+            @extend .dead;
+            color: #fff;
+            background-color: #64C56E;
+        }
+        h1 {
+            margin-bottom: 5vh;
+            font-family: OpenSans;
+            font-size: 16px;
+            color: #616161;
+        }
+        .sex {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .gender {
+                display: flex;
+                flex-direction: column;
+                p {
+                    margin-top: 16px;
+                    font-size: 12px;
+                    transition: all 0.3s ease-in-out;
+                }
+                img{
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .nay {
+                img {
+                    filter: grayscale(1);
+                    opacity: 0.6;
+                }
+                p {
+                    font-family: OpenSans-Regular;
+                    color: #B5B5B5;
+                }
+            }
+            .yay {
+                p {
+                    font-family: OpenSans-Semibold;
+                    opacity: #616161;
+                }
+            }
+        }
     }
 }
