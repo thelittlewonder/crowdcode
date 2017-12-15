@@ -1,3 +1,25 @@
+//splash
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $('.splash').css('height', 0);
+        $('.splash').css('opacity', 0);
+        $('.container').css('height', 'auto');
+        $('.container').css('opacity', 1);
+    }, 3000);
+});
+
+
+$('.splash').hammer().on("tap", function (ev) {
+    $('.splash').css('height', 0);
+    $('.splash').css('opacity', 0);
+    $('.container').css('height', 'auto');
+    $('.container').css('opacity', 1);
+});
+
+
+//splash
+
 //Onboarding
 
 /*--------------------------*/
@@ -5,7 +27,7 @@ var active = 0;
 var slidingText = ['Personalised  Coding Lessons <br> &nbsp', 'Learn with people having the same background', 'Divided into bite sized chunks <br> &nbsp'];
 var slidingImages = ['img/img1.png', 'img/img2.png', 'img/img3.png'];
 
-$('#slidingimg').swipeLeft(function () {
+$('#slidingimg').hammer().on("panleft", function (ev) {
     active = active + 1;
     active = active % 3;
     if (active === 0) {
@@ -31,8 +53,7 @@ $('#slidingimg').swipeLeft(function () {
     }
 });
 
-
-$('#slidingimg').swipeRight(function () {
+$('#slidingimg').hammer().on("panright", function (ev) {
     active = active - 1;
     if (active < 0) {
         active = 0;
@@ -61,7 +82,8 @@ $('#slidingimg').swipeRight(function () {
     }
 });
 
-$('#one').tap(function () {
+
+$('#one').hammer().on("tap", function (ev) {
     document.getElementById('one').classList.add('active');
     document.getElementById('two').classList = ['slide'];
     document.getElementById('three').classList = ['slide'];
@@ -69,7 +91,7 @@ $('#one').tap(function () {
     document.getElementById('slidingimg').src = slidingImages[0];
 });
 
-$('#two').tap(function () {
+$('#two').hammer().on("tap", function (ev) {
     document.getElementById('one').classList = ['slide'];
     document.getElementById('two').classList.add('active');
     document.getElementById('three').classList = ['slide'];
@@ -77,7 +99,7 @@ $('#two').tap(function () {
     document.getElementById('slidingimg').src = slidingImages[1];
 });
 
-$('#three').tap(function () {
+$('#three').hammer().on("tap", function (ev) {
     document.getElementById('one').classList = ['slide'];
     document.getElementById('two').classList = ['slide'];
     document.getElementById('three').classList.add('active');
