@@ -30,12 +30,33 @@ body {
     font-style: normal;
 }
 
+//splash screen
+.splash {
+    height: 100vh;
+    background: url(../img/splash.png);
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.2s ease-out;
+    img {
+        margin-top: 40vh;
+    }
+    h1 {
+        margin-top: 16px;
+        font-family: OpenSans;
+        font-size: 13.88px;
+        color: #616161;
+    }
+}
+
 //Onboarding
 .container {
+    height: 0;
+    opacity: 0;
     margin-top: 15vh;
     padding: 16px;
     height: 100%;
     text-align: center;
+    transition: all 1.5s ease-in;
     h1 {
         font-family: OpenSans-Semibold;
         font-size: 20px;
