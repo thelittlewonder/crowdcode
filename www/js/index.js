@@ -1,3 +1,7 @@
+var gender = 'a';
+var email;
+var name;
+
 //splash
 
 $(document).ready(function () {
@@ -108,6 +112,50 @@ $('#three').hammer().on("tap", function (ev) {
 });
 
 
+//Onboarding
 /*--------------------------*/
 
-//Onboarding
+$('#female').hammer().on("tap", function (ev) {
+    gender = "female";
+    document.getElementById('female').classList.remove('nay');
+    document.getElementById('female').classList.add('yay');
+    document.getElementById('male').classList.remove('yay');
+    document.getElementById('male').classList.add('nay');
+});
+
+$('#male').hammer().on("tap", function (ev) {
+    gender = "male";
+    document.getElementById('male').classList.remove('nay');
+    document.getElementById('male').classList.add('yay');
+    document.getElementById('female').classList.remove('yay');
+    document.getElementById('female').classList.add('nay');
+});
+
+
+var check = function () {
+    let flag1, flag2, flag3 = 0;
+    if ((document.getElementById('first').value).length > 0) {
+        flag1 = 1;
+    } else {
+        flag1 = 0;
+    }
+    if ((document.getElementById('last').value).length > 0) {
+        flag2 = 1;
+    } else {
+        flag2 = 0;
+    }
+    if (gender.length > 2) {
+        flag3 = 1;
+    } else {
+        flag3 = 0;
+    }
+    if (flag1 + flag2 + flag3 === 3) {
+        document.getElementById('chalo').classList.remove('dead');
+        document.getElementById('chalo').classList.add('alive');
+    } else {
+        document.getElementById('chalo').classList.remove('alive');
+        document.getElementById('chalo').classList.add('dead');
+    }
+};
+
+window.setInterval(check,1000);

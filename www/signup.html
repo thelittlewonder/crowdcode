@@ -8,6 +8,8 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Hello World</title>
 </head>
@@ -21,7 +23,34 @@
                 </div>
                 <h1>Let's setup your profile</h1>
             </div>
-            <div class="background"> 
+            <div class="background">
+                <form action="#" autocomplete="off">
+                    <fieldset>
+                        <input id="first" type="text" name="first" required>
+                        <label for="first">Full Name</label>
+                        <div class="after"></div>
+                    </fieldset>
+                    <fieldset>
+                        <input id="last" type="text" name="last" required>
+                        <label for="last">Email Address</label>
+                        <div class="after"></div>
+                    </fieldset>
+                    <h1>Gender</h1>
+                    <div class="sex">
+                        <div class="gender nay" id="female">
+                            <img src="img/female.png">
+                            <p>Female</p>
+                        </div>
+                        <div class="gender nay" id="male">
+                            <img src="img/male.png">
+                            <p>Male</p>
+                        </div>
+                    </div>
+                </form>
+
+                <button class="dead" id="chalo">
+                    Continue
+                </button>
             </div>
         </div>
     </div>
