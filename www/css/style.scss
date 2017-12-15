@@ -1,0 +1,138 @@
+body {
+    background-color: #fafafa;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'), url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'), url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Onboarding
+.container {
+    margin-top: 15vh;
+    padding: 16px;
+    height: 100%;
+    text-align: center;
+    h1 {
+        font-family: OpenSans-Semibold;
+        font-size: 20px;
+        color: #343434;
+        line-height: 36px;
+    }
+    #slidingimg {
+        text-align: center;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .control {
+        margin-top: 10vh;
+        .slider {
+            margin: 24px auto;
+            padding: 4px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .slide {
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin: 0 8px;
+                background: #E3E3E3;
+                transition: all 0.25s ease-in-out;
+            }
+            .active {
+                border-radius: 50%;
+                height: 14px;
+                width: 14px;
+                background: #BDBDBD;
+            }
+        }
+        label {
+            margin-top: 18px;
+            font-family: OpenSans-Light;
+            font-size: 9px;
+            display: block;
+            color: #343434;
+        }
+        a {
+            button {
+                padding: 12px;
+                background: #FFFFFF;
+                box-shadow: 0 2px 3px 0 rgba(180, 180, 180, 0.50);
+                border-radius: 3px;
+                width: 80%;
+                font-family: OpenSans-Semibold;
+                font-size: 18px;
+                color: #565656;
+                img {
+                    vertical-align: middle;
+                    margin-right: 16px;
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+    }
+}
+
+//Onboarding
+.signup {
+    .gradient {
+        .total {
+            width: 100px;
+            height: 4px;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 24px;
+            background: rgba(255, 255, 255, 0.39);
+            border-radius: 100px;
+        }
+        .part {
+            width: 25px;
+            height: 4px;
+            float: left;
+            margin: 0 auto;
+            margin-bottom: 24px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 100px;
+        }
+        padding: 48px 0;
+        text-align: center;
+        background-image: linear-gradient(-180deg,
+        #65C86F 0%,
+        #60BA69 100%);
+        h1 {
+            font-family: OpenSans-Semibold;
+            font-size: 18px;
+            color: #FFFFFF;
+        }
+    }
+    .background {
+        background: #FAFAFA;
+        border-radius: 10px;
+    }
+}

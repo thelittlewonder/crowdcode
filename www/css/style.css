@@ -1,0 +1,129 @@
+/* line 1, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+body {
+  background-color: #fafafa; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 34, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+.container {
+  margin-top: 15vh;
+  padding: 16px;
+  height: 100%;
+  text-align: center; }
+  /* line 39, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .container h1 {
+    font-family: OpenSans-Semibold;
+    font-size: 20px;
+    color: #343434;
+    line-height: 36px; }
+  /* line 45, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .container #slidingimg {
+    text-align: center;
+    margin: 0 auto;
+    height: 300px; }
+  /* line 50, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .container .control {
+    margin-top: 10vh; }
+    /* line 52, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    .container .control .slider {
+      margin: 24px auto;
+      padding: 4px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      /* line 59, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      .container .control .slider .slide {
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        margin: 0 8px;
+        background: #E3E3E3;
+        transition: all 0.25s ease-in-out; }
+      /* line 67, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      .container .control .slider .active {
+        border-radius: 50%;
+        height: 14px;
+        width: 14px;
+        background: #BDBDBD; }
+    /* line 74, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    .container .control label {
+      margin-top: 18px;
+      font-family: OpenSans-Light;
+      font-size: 9px;
+      display: block;
+      color: #343434; }
+    /* line 82, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    .container .control a button {
+      padding: 12px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 3px 0 rgba(180, 180, 180, 0.5);
+      border-radius: 3px;
+      width: 80%;
+      font-family: OpenSans-Semibold;
+      font-size: 18px;
+      color: #565656; }
+      /* line 91, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      .container .control a button img {
+        vertical-align: middle;
+        margin-right: 16px;
+        height: 18px;
+        width: 18px; }
+
+/* line 104, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+.signup .gradient {
+  padding: 48px 0;
+  text-align: center;
+  background-image: linear-gradient(-180deg, #65C86F 0%, #60BA69 100%); }
+  /* line 105, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .signup .gradient .total {
+    width: 100px;
+    height: 4px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 0.39);
+    border-radius: 100px; }
+  /* line 114, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .signup .gradient .part {
+    width: 25px;
+    height: 4px;
+    float: left;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    background: white;
+    border-radius: 100px; }
+  /* line 128, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .signup .gradient h1 {
+    font-family: OpenSans-Semibold;
+    font-size: 18px;
+    color: #FFFFFF; }
+
+/* line 134, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+.signup .background {
+  background: #FAFAFA;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=style.css.map */
