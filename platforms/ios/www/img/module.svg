@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="9.6" height="9.6" rx="1"></rect>
+        <rect id="path-2" x="1.7" y="1.7" width="9.6" height="9.6" rx="1"></rect>
+        <rect id="path-3" x="3.4" y="3.4" width="9.6" height="9.6" rx="1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-32.000000, -174.000000)">
+            <g id="Group-3" transform="translate(16.000000, 129.000000)">
+                <g id="Group-4" transform="translate(16.000000, 45.000000)">
+                    <g id="Rectangle-20">
+                        <use fill="#28C1F9" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#FFFFFF" stroke-width="0.5" x="0.25" y="0.25" width="9.1" height="9.1" rx="1"></rect>
+                    </g>
+                    <g id="Rectangle-20-Copy">
+                        <use fill="#28C1F9" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#FFFFFF" stroke-width="0.5" x="1.95" y="1.95" width="9.1" height="9.1" rx="1"></rect>
+                    </g>
+                    <g id="Rectangle-20-Copy-2">
+                        <use fill="#28C1F9" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#FFFFFF" stroke-width="0.5" x="3.65" y="3.65" width="9.1" height="9.1" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

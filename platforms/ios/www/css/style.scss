@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    transition: all 0.25s ease-in-out;
     background-color: #fafafa;
 }
 
@@ -53,6 +54,10 @@ body {
 }
 
 //Onboarding
+.signup {
+    transition: all 0.25s ease-in-out;
+}
+
 .container {
     opacity: 0;
     margin-top: 15vh;
@@ -134,6 +139,7 @@ body {
 //registration
 .signup {
     .gradient {
+        transition: all 0.25s ease-in-out;
         .total {
             width: 100px;
             height: 4px;
@@ -339,7 +345,7 @@ body {
             .meragrp {
                 border: 1px solid #64C56E;
                 h2 {
-                    color: #64C56E;
+                    color: #64C56E!important;
                 }
             }
             .recommended {
@@ -360,5 +366,67 @@ body {
                 }
             }
         }
+    }
+}
+
+//loader
+.loader {
+    padding: 24px;
+    padding-top: 45vh;
+    margin: 0 auto;
+    text-align: center;
+    h1 {
+        text-align: center;
+        font-family: 'OpenSans-Semibold';
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .progress {
+        width: 150px;
+        height: 5px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        background: rgba(255, 255, 255, 0.39);
+        border-radius: 100px;
+    }
+    .progresspart {
+        width: 0px;
+        height: 5px;
+        float: left;
+        transition: all 1s ease-in;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 100px;
+    }
+}
+
+//home screen
+.root {
+    overflow-y: scroll;
+    .header {
+        height: 8vh;
+        background: #64C56E;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        div {
+            #profile {
+                margin-left: 20px;
+            }
+        }
+    }
+    h3 {
+        padding: 16px;
+        font-family: 'OpenSans-Regular';
+        font-size: 12px;
+        color: #616161;
+    }
+    #module{
+        
     }
 }
