@@ -123,8 +123,6 @@ $('#female').hammer().on("tap", function (ev) {
     document.getElementById('female').classList.add('yay');
     document.getElementById('male').classList.remove('yay');
     document.getElementById('male').classList.add('nay');
-    document.getElementById('chalo').classList.remove('dead');
-    document.getElementById('chalo').classList.add('alive');
 });
 
 $('#male').hammer().on("tap", function (ev) {
@@ -133,14 +131,34 @@ $('#male').hammer().on("tap", function (ev) {
     document.getElementById('male').classList.add('yay');
     document.getElementById('female').classList.remove('yay');
     document.getElementById('female').classList.add('nay');
-    document.getElementById('chalo').classList.remove('dead');
-    document.getElementById('chalo').classList.add('alive');
 });
+
+
+var check1, check2, check3 = 0;
+var formcheck = window.setInterval(function () {
+    if (check1 + check2 + check3 === 3) {
+        document.getElementById('chalo').classList.remove('dead');
+        document.getElementById('chalo').classList.add('alive');
+    } else {
+        document.getElementById('chalo').classList.remove('alive');
+        document.getElementById('chalo').classList.add('dead');
+    }
+    if (gender.length > 2) {
+        check1 = 1;
+    }
+    if ((document.getElementById('first').value).length > 1) {
+        check2 = 1;
+    }
+    if ((document.getElementById('last').value).length > 1) {
+        check3 = 1;
+    }
+}, 100);
 
 
 $('#chalo').hammer().on("tap", function () {
     console.log(allset);
     if (allset === 0) {
+        clearInterval(formcheck);
         document.getElementById('chalo').classList.remove('alive');
         document.getElementById('chalo').classList.add('dead');
         $('.part').css('width', '40%');
@@ -181,8 +199,29 @@ $('#chalo').hammer().on("tap", function () {
             $('#morejobs').remove();
             $('.grpgroup').css('display', 'block');
             $('#chalo').css('position', 'sticky');
+            $('#chalo').html('Join and Start Learning');
         }, 300);
         allset = allset + 1;
+    } else if (allset === 3) {
+        window.setTimeout(function () {
+            $('.signup').css('opacity', 0);
+        }, 100);
+        $('body').css('background', 'url(img/loadingpattern.png)');
+        $('body').css('background-color', '#64C56E');
+        window.setTimeout(function () {
+            $('.signup').remove();
+        }, 300);
+        $('.loader').css('display', 'block');
+        var foo = setInterval(function () {
+            console.log($('.progresspart').width());
+            if ($('.progresspart').width() === 150) {
+                clearInterval(foo);
+                window.location.href = "home.html";
+            }
+            let temp = $('.progresspart').width();
+            temp = temp + 30;
+            document.getElementById('prg').style.width = temp + 'px';
+        }, 1000);
     }
 });
 
