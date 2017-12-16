@@ -3,6 +3,7 @@ var email;
 var name;
 var allset = 0;
 var agegroup;
+var learngroup;
 //splash
 
 $(document).ready(function () {
@@ -177,6 +178,9 @@ $('#chalo').hammer().on("tap", function () {
         $('#lmao').css('opacity', 0);
         window.setTimeout(function () {
             $('.jobgroup').remove();
+            $('#morejobs').remove();
+            $('.grpgroup').css('display', 'block');
+            $('#chalo').css('position', 'sticky');
         }, 300);
         allset = allset + 1;
     }
@@ -190,6 +194,7 @@ $('#g1').hammer().on('tap', function () {
     document.getElementById('g5').classList.remove('zinda');
     document.getElementById('chalo').classList.remove('dead');
     document.getElementById('chalo').classList.add('alive');
+    agegroup = '4-12';
 });
 
 $('#g2').hammer().on('tap', function () {
@@ -200,6 +205,7 @@ $('#g2').hammer().on('tap', function () {
     document.getElementById('g5').classList.remove('zinda');
     document.getElementById('chalo').classList.remove('dead');
     document.getElementById('chalo').classList.add('alive');
+    agegroup = '13-20';
 });
 
 
@@ -211,6 +217,7 @@ $('#g3').hammer().on('tap', function () {
     document.getElementById('g5').classList.remove('zinda');
     document.getElementById('chalo').classList.remove('dead');
     document.getElementById('chalo').classList.add('alive');
+    agegroup = '21-35';
 });
 
 $('#g4').hammer().on('tap', function () {
@@ -221,6 +228,7 @@ $('#g4').hammer().on('tap', function () {
     document.getElementById('g5').classList.remove('zinda');
     document.getElementById('chalo').classList.remove('dead');
     document.getElementById('chalo').classList.add('alive');
+    agegroup = '35-60';
 });
 
 $('#g5').hammer().on('tap', function () {
@@ -231,6 +239,7 @@ $('#g5').hammer().on('tap', function () {
     document.getElementById('g1').classList.remove('zinda');
     document.getElementById('chalo').classList.remove('dead');
     document.getElementById('chalo').classList.add('alive');
+    agegroup = '60+'
 });
 
 
@@ -296,6 +305,57 @@ $('#police').hammer().on('tap', function () {
     document.getElementById('chef').classList.remove('mera');
     document.getElementById('engineer').classList.remove('mera');
     document.getElementById('doctor').classList.remove('mera');
+    document.getElementById('chalo').classList.remove('dead');
+    document.getElementById('chalo').classList.add('alive');
+});
+
+
+$('#whc').hammer().on('tap', function () {
+    document.getElementById('whc').classList.add('meragrp');
+    document.getElementById('tc').classList.remove('meragrp');
+    document.getElementById('wcsl').classList.remove('meragrp');
+    document.getElementById('cfc').classList.remove('meragrp');
+    document.getElementById('pp').classList.remove('meragrp');
+    document.getElementById('chalo').classList.remove('dead');
+    document.getElementById('chalo').classList.add('alive');
+});
+
+$('#tc').hammer().on('tap', function () {
+    document.getElementById('tc').classList.add('meragrp');
+    document.getElementById('whc').classList.remove('meragrp');
+    document.getElementById('wcsl').classList.remove('meragrp');
+    document.getElementById('cfc').classList.remove('meragrp');
+    document.getElementById('pp').classList.remove('meragrp');
+    document.getElementById('chalo').classList.remove('dead');
+    document.getElementById('chalo').classList.add('alive');
+});
+
+$('#wcsl').hammer().on('tap', function () {
+    document.getElementById('wcsl').classList.add('meragrp');
+    document.getElementById('tc').classList.remove('meragrp');
+    document.getElementById('whc').classList.remove('meragrp');
+    document.getElementById('cfc').classList.remove('meragrp');
+    document.getElementById('pp').classList.remove('meragrp');
+    document.getElementById('chalo').classList.remove('dead');
+    document.getElementById('chalo').classList.add('alive');
+});
+
+$('#cfc').hammer().on('tap', function () {
+    document.getElementById('cfc').classList.add('meragrp');
+    document.getElementById('tc').classList.remove('meragrp');
+    document.getElementById('wcsl').classList.remove('meragrp');
+    document.getElementById('whc').classList.remove('meragrp');
+    document.getElementById('pp').classList.remove('meragrp');
+    document.getElementById('chalo').classList.remove('dead');
+    document.getElementById('chalo').classList.add('alive');
+});
+
+$('#pp').hammer().on('tap', function () {
+    document.getElementById('pp').classList.add('meragrp');
+    document.getElementById('tc').classList.remove('meragrp');
+    document.getElementById('wcsl').classList.remove('meragrp');
+    document.getElementById('cfc').classList.remove('meragrp');
+    document.getElementById('whc').classList.remove('meragrp');
     document.getElementById('chalo').classList.remove('dead');
     document.getElementById('chalo').classList.add('alive');
 });

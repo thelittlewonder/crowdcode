@@ -73,9 +73,11 @@ body {
         height: 300px;
     }
     .control {
-        margin-top: 10vh;
         .slider {
-            margin: 24px auto;
+            position: absolute;
+            left: 38vw;
+            bottom: 120px;
+            text-align: center;
             padding: 4px;
             display: flex;
             flex-direction: row;
@@ -96,28 +98,34 @@ body {
                 background: #BDBDBD;
             }
         }
-        label {
-            margin-top: 18px;
-            font-family: OpenSans-Light;
-            font-size: 9px;
-            display: block;
-            color: #343434;
-        }
-        a {
-            button {
-                padding: 12px;
-                background: #FFFFFF;
-                box-shadow: 0 2px 3px 0 rgba(180, 180, 180, 0.50);
-                border-radius: 3px;
-                width: 80%;
-                font-family: OpenSans-Semibold;
-                font-size: 18px;
-                color: #565656;
-                img {
-                    vertical-align: middle;
-                    margin-right: 16px;
-                    height: 18px;
-                    width: 18px;
+        #continue {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            left: 0;
+            label {
+                margin-top: 18px;
+                font-family: OpenSans-Light;
+                font-size: 9px;
+                display: block;
+                color: #343434;
+            }
+            a {
+                button {
+                    padding: 12px;
+                    background: #FFFFFF;
+                    box-shadow: 0 2px 3px 0 rgba(180, 180, 180, 0.50);
+                    border-radius: 3px;
+                    width: 80%;
+                    font-family: OpenSans-Semibold;
+                    font-size: 18px;
+                    color: #565656;
+                    img {
+                        vertical-align: middle;
+                        margin-right: 16px;
+                        height: 18px;
+                        width: 18px;
+                    }
                 }
             }
         }
@@ -161,6 +169,15 @@ body {
         }
     }
     .background {
+        div {
+            text-align: center;
+            a {
+                text-decoration: underline;
+                font-family: 'OpenSans-Regular';
+                font-size: 14px;
+                color: #979797;
+            }
+        }
         background: #FAFAFA;
         border-radius: 10px;
         .dead {
@@ -235,7 +252,7 @@ body {
                 background: #FFFFFF;
                 box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
                 border-radius: 3px;
-                font-family: OpenSans;
+                font-family: 'OpenSans-Regular';
                 font-size: 14px;
                 color: #A6A6A6;
                 transition: all 0.25s ease-in-out;
@@ -263,7 +280,7 @@ body {
                 p {
                     margin-top: 10px;
                     transition: all 0.25s ease-in-out;
-                    font-family: OpenSans;
+                    font-family: 'OpenSans-Regular';
                     font-size: 12px;
                     color: #B5B5B5;
                 }

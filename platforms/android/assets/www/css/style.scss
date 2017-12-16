@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    overflow-y: hidden;
     background-color: #fafafa;
 }
 
@@ -54,7 +55,6 @@ body {
 
 //Onboarding
 .container {
-    height: 0;
     opacity: 0;
     margin-top: 15vh;
     padding: 16px;
@@ -73,9 +73,11 @@ body {
         height: 300px;
     }
     .control {
-        margin-top: 10vh;
         .slider {
-            margin: 24px auto;
+            position: absolute;
+            left: 38vw;
+            bottom: 120px;
+            text-align: center;
             padding: 4px;
             display: flex;
             flex-direction: row;
@@ -96,35 +98,41 @@ body {
                 background: #BDBDBD;
             }
         }
-        label {
-            margin-top: 18px;
-            font-family: OpenSans-Light;
-            font-size: 9px;
-            display: block;
-            color: #343434;
-        }
-        a {
-            button {
-                padding: 12px;
-                background: #FFFFFF;
-                box-shadow: 0 2px 3px 0 rgba(180, 180, 180, 0.50);
-                border-radius: 3px;
-                width: 80%;
-                font-family: OpenSans-Semibold;
-                font-size: 18px;
-                color: #565656;
-                img {
-                    vertical-align: middle;
-                    margin-right: 16px;
-                    height: 18px;
-                    width: 18px;
+        #continue {
+            position: absolute;
+            width: 100%;
+            bottom: 20px;
+            left: 0;
+            label {
+                margin-top: 18px;
+                font-family: OpenSans-Light;
+                font-size: 9px;
+                display: block;
+                color: #343434;
+            }
+            a {
+                button {
+                    padding: 12px;
+                    background: #FFFFFF;
+                    box-shadow: 0 2px 3px 0 rgba(180, 180, 180, 0.50);
+                    border-radius: 3px;
+                    width: 80%;
+                    font-family: OpenSans-Semibold;
+                    font-size: 18px;
+                    color: #565656;
+                    img {
+                        vertical-align: middle;
+                        margin-right: 16px;
+                        height: 18px;
+                        width: 18px;
+                    }
                 }
             }
         }
     }
 }
 
-//Onboarding
+//registration
 .signup {
     .gradient {
         .total {
@@ -140,6 +148,7 @@ body {
             width: 25px;
             height: 4px;
             float: left;
+            transition: all 0.5s ease-out;
             margin: 0 auto;
             margin-bottom: 24px;
             background: rgba(255, 255, 255, 1);
@@ -151,13 +160,141 @@ body {
         #65C86F 0%,
         #60BA69 100%);
         h1 {
+            transition: all 0.5s ease-out;
             font-family: OpenSans-Semibold;
             font-size: 18px;
             color: #FFFFFF;
+            display: inline-block;
+            vertical-align: middle;
         }
     }
     .background {
+        div {
+            text-align: center;
+            a {
+                text-decoration: underline;
+                font-family: 'OpenSans-Regular';
+                font-size: 14px;
+                color: #979797;
+            }
+        }
         background: #FAFAFA;
         border-radius: 10px;
+        .dead {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-family: OpenSans-Semibold;
+            padding: 16px;
+            font-size: 20px;
+            color: #A9A9A9;
+            background: #F1F1F1;
+            transition: all 0.1s ease-in;
+        }
+        .alive {
+            @extend .dead;
+            color: #fff;
+            background-color: #64C56E;
+        }
+        h1 {
+            margin-bottom: 5vh;
+            font-family: 'OpenSans-Regular';
+            font-size: 16px;
+            color: #616161;
+        }
+        .sex {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .gender {
+                display: flex;
+                flex-direction: column;
+                p {
+                    margin-top: 16px;
+                    font-size: 12px;
+                    transition: all 0.3s ease-in-out;
+                }
+                img {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .nay {
+                img {
+                    filter: grayscale(1);
+                    opacity: 0.6;
+                }
+                p {
+                    font-family: OpenSans-Regular;
+                    color: #B5B5B5;
+                }
+            }
+            .yay {
+                p {
+                    font-family: OpenSans-Semibold;
+                    opacity: #616161;
+                }
+            }
+        }
+        .agegroup {
+            margin-top: 5vh;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            .grp {
+                display: inline-block;
+                text-align: center;
+                margin: 12px;
+                padding: 12px;
+                background: #FFFFFF;
+                box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
+                border-radius: 3px;
+                font-family: 'OpenSans-Regular';
+                font-size: 14px;
+                color: #A6A6A6;
+                transition: all 0.25s ease-in-out;
+            }
+            .zinda {
+                border: 1px solid #62BF6B;
+                box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
+                color: #61BE6B;
+            }
+        }
+        .jobgroup {
+            justify-content: center;
+            margin-top: 5vh;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .job {
+                margin: 12px;
+                img {
+                    transition: all 0.25s ease-in-out;
+                    opacity: 0.5;
+                    filter: grayscale(1);
+                }
+                p {
+                    margin-top: 10px;
+                    transition: all 0.25s ease-in-out;
+                    font-family: 'OpenSans-Regular';
+                    font-size: 12px;
+                    color: #B5B5B5;
+                }
+            }
+            .mera {
+                img {
+                    opacity: 1;
+                    filter: grayscale(0);
+                }
+                p {
+                    font-family: OpenSans-Semibold;
+                    color: #616161;
+                }
+            }
+        }
     }
 }

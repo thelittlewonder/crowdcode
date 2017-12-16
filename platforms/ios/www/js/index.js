@@ -164,6 +164,7 @@ $('#chalo').hammer().on("tap", function () {
         window.setTimeout(function () {
             $('.agegroup').remove();
             $('.jobgroup').css('display', 'flex');
+            $('#morejobs').css('display', 'block');
         }, 300);
         allset = allset + 1;
     } else if (allset === 2) {
