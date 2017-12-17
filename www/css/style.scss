@@ -403,9 +403,97 @@ body {
     }
 }
 
+$total:4;
+$n:0;
 //home screen
 .root {
+      max-width: 100%;
+  overflow-x: hidden;
     overflow-y: scroll;
+    .cards {
+        background-color: #28C1F9;
+        height: 100vh;
+        .action {
+            padding: 40px 24px 0px 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .bars {
+                display: flex;
+                flex-direction: row;
+                .bar {
+                    background: #FFFFFF;
+                    border-radius: 1px;
+                    height: 2px;
+                    width: 2em;
+                    margin: 8px;
+                    opacity: 0.5;
+                }
+                .current {
+                    opacity: 1;
+                }
+            }
+        }
+        .card-list {
+            text-align: center;
+            margin-top: 10vh;
+            div {
+                position: relative;
+                left: 12%;
+                div {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 4px;
+                    transform-origin: center;
+                    transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+                    @while $total>=$n {
+                        &:nth-child(#{$n + 1}) {
+                            z-index: #{$total - $n};
+                            top: #{-$n * 8 + "px"};
+                            transform-origin: top;
+                            transform: scale(#{1 - $n * .05});
+                            opacity: #{1 - $n * .08};
+                        }
+                        $n: $n+1;
+                    }
+                    &:last-child {
+                        opacity: 0;
+                    }
+                }
+                .card {
+                    padding: 16px;
+                    background: #FFFFFF;
+                    width: 70%;
+                    max-width: 400px;
+                    margin: 0 auto;
+                    box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
+                    h1 {
+                        font-family: 'OpenSans-Regular';
+                        font-size: 14px;
+                        color: #616161;
+                        line-height: 22px;
+                    }
+                    img {
+                        margin: 2vh;
+                    }
+                    hr {
+                        border: 1px solid #28c1f9;
+                        width: 20%;
+                        color: #28C1F9;
+                        margin-bottom: 2vh;
+                    }
+                    p {
+                        font-family: 'OpenSans-Light';
+                        font-size: 1.1em;
+                        color: #616161;
+                        line-height: 28px;
+                        margin: 2vh 0px 8vh 0px;
+                    }
+                }
+            }
+        }
+    }
     .header {
         height: 8vh;
         background: #64C56E;
