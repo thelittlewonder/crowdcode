@@ -414,6 +414,13 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 0 16px;
+        h1 {
+            font-family: 'ProductSans-Regular';
+            font-size: 22px;
+            color: #FFFFFF;
+            font-weight: normal;
+            letter-spacing: 0.3px;
+        }
         div {
             #profile {
                 margin-left: 20px;
@@ -467,6 +474,82 @@ body {
             opacity: 0.8;
             letter-spacing: 0.5px;
             text-transform: uppercase;
+        }
+    }
+    .content {
+        padding: 16px;
+        p {
+            font-family: 'OpenSans-Regular';
+            font-size: 12px;
+            color: #616161;
+            line-height: 20px;
+            margin-bottom: 4px;
+        }
+        .lesson {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            background: #FFFFFF;
+            box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
+            .r0 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                h4 {
+                    font-family: 'OpenSans-Regular';
+                    font-size: 8px;
+                    color: #616161;
+                    letter-spacing: 0.2px;
+                }
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    p {
+                        font-family: 'OpenSans-Regular';
+                        font-size: 8px;
+                        color: #616161;
+                        letter-spacing: 0.2px;
+                        margin: 0;
+                        padding: 0;
+                        margin-left: 4px;
+                    }
+                }
+            }
+            h2 {
+                font-family: 'OpenSans-Semibold';
+                margin: 8px 0;
+                font-size: 14px;
+                color: #616161;
+            }
+            .r2 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                h3 {
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    font-family: 'OpenSans-Light';
+                    font-size: 12px;
+                    color: #616161;
+                }
+                .chaptotal {
+                    width: 30%;
+                    height: 5px;
+                    border-radius: 1px;
+                    background: rgba(40, 193, 249, 0.15);
+                }
+                .chapcovered {
+                    height: 5px;
+                    float: left;
+                    transition: all 1s ease-in;
+                    border-radius: 1px;
+                    background: rgba(40, 193, 249, 1);
+                }
+            }
         }
     }
 }
