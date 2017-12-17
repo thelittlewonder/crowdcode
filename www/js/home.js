@@ -1,3 +1,6 @@
+document.addEventListener('deviceready', function(){
+StatusBar.backgroundColorByHexString('#28C1F9');});
+
 function onmousedown(event) {
 		console.log(event);
 	var pageX = (event.type.toLowerCase() === 'mousedown') ? event.pageX : event.touches[0].pageX;

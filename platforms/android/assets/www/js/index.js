@@ -23,6 +23,8 @@ $('.splash').hammer().on("tap", function (ev) {
     $('.container').css('opacity', 1);
 });
 
+document.addEventListener('deviceready', function(){
+StatusBar.backgroundColorByHexString('#64C56E');});
 
 //splash
 
@@ -214,7 +216,7 @@ $('#chalo').hammer().on("tap", function () {
         $('.loader').css('display', 'block');
         var foo = setInterval(function () {
             console.log($('.progresspart').width());
-            if ($('.progresspart').width() === 150) {
+            if ($('.progresspart').width() > 150) {
                 clearInterval(foo);
                 window.location.href = "home.html";
             }

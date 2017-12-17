@@ -23,6 +23,8 @@ $('.splash').hammer().on("tap", function (ev) {
     $('.container').css('opacity', 1);
 });
 
+document.addEventListener('deviceready', function(){
+StatusBar.backgroundColorByHexString('#64C56E');});
 
 //splash
 
