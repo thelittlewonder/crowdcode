@@ -407,8 +407,8 @@ $total:4;
 $n:0;
 //home screen
 .root {
-      max-width: 100%;
-  overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
     overflow-y: scroll;
     .cards {
         background-color: #28C1F9;
@@ -434,13 +434,13 @@ $n:0;
                 }
             }
         }
-        .card-list {
+        .cardsContainer {
             text-align: center;
             margin-top: 10vh;
             div {
                 position: relative;
                 left: 12%;
-                div {
+                card {
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -456,9 +456,6 @@ $n:0;
                             opacity: #{1 - $n * .08};
                         }
                         $n: $n+1;
-                    }
-                    &:last-child {
-                        opacity: 0;
                     }
                 }
                 .card {
@@ -489,6 +486,14 @@ $n:0;
                         color: #616161;
                         line-height: 28px;
                         margin: 2vh 0px 8vh 0px;
+                    }
+                    button {
+                        padding: 12px;
+                        background: #64C56E;
+                        border-radius: 3px;
+                        font-family: OpenSans-Semibold;
+                        font-size: 14px;
+                        color: #FFFFFF;
                     }
                 }
             }
