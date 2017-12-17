@@ -628,48 +628,60 @@ body {
     /* line 633, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .header div #profile {
       margin-left: 20px; }
-  /* line 638, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 637, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    .root .header input {
+      opacity: 0;
+      padding: 6px;
+      font-size: 12px;
+      width: 89%;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 2px;
+      font-family: 'OpenSans-Light';
+      transition: all 0.2s ease-in;
+      display: none; }
+  /* line 650, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root h3 {
     padding: 16px;
     font-family: 'OpenSans-Regular';
     font-size: 12px;
     color: #616161; }
-  /* line 644, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 656, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root .module {
     text-align: left;
     margin: 0px 16px 24px 16px;
     padding: 16px;
     background: #FFFFFF;
     box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-    /* line 650, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 662, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module h1 {
       font-family: 'OpenSans-Semibold';
       font-size: 14px;
       color: #616161;
       margin-bottom: 12px; }
-    /* line 656, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 668, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module div {
       display: flex;
       flex-direction: row;
       margin-bottom: 12px; }
-      /* line 660, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      /* line 672, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .module div p {
         margin-left: 8px;
         font-family: 'OpenSans-Regular';
         font-size: 12px;
         color: #828282; }
-    /* line 667, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 679, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module .chaptotal {
       width: 100%;
       height: 8px;
       border-radius: 2px; }
-    /* line 672, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 684, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module .chapcovered {
       height: 8px;
       float: left;
       transition: all 1s ease-in;
       border-radius: 2px; }
-    /* line 678, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 690, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module h4 {
       font-family: 'OpenSans-Regular';
       font-size: 8px;
@@ -677,17 +689,17 @@ body {
       opacity: 0.8;
       letter-spacing: 0.5px;
       text-transform: uppercase; }
-  /* line 687, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 699, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root .content {
     padding: 16px; }
-    /* line 689, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 701, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .content p {
       font-family: 'OpenSans-Regular';
       font-size: 12px;
       color: #616161;
       line-height: 20px;
       margin-bottom: 4px; }
-    /* line 696, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 708, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .content .lesson {
       margin: 20px 0;
       display: flex;
@@ -695,24 +707,24 @@ body {
       padding: 12px;
       background: #FFFFFF;
       box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-      /* line 703, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      /* line 715, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .content .lesson .r0 {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between; }
-        /* line 708, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+        /* line 720, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r0 h4 {
           font-family: 'OpenSans-Regular';
           font-size: 8px;
           color: #616161;
           letter-spacing: 0.2px; }
-        /* line 714, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+        /* line 726, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r0 div {
           display: flex;
           flex-direction: row;
           align-items: center; }
-          /* line 718, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+          /* line 730, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .content .lesson .r0 div p {
             font-family: 'OpenSans-Regular';
             font-size: 8px;
@@ -721,18 +733,18 @@ body {
             margin: 0;
             padding: 0;
             margin-left: 4px; }
-      /* line 729, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      /* line 741, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .content .lesson h2 {
         font-family: 'OpenSans-Semibold';
         margin: 8px 0;
         font-size: 14px;
         color: #616161; }
-      /* line 735, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+      /* line 747, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .content .lesson .r2 {
         display: flex;
         flex-direction: row;
         align-items: center; }
-        /* line 739, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+        /* line 751, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r2 h3 {
           padding: 0;
           margin: 0;
@@ -740,13 +752,13 @@ body {
           font-family: 'OpenSans-Light';
           font-size: 12px;
           color: #616161; }
-        /* line 747, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+        /* line 759, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r2 .chaptotal {
           width: 30%;
           height: 5px;
           border-radius: 1px;
           background: rgba(40, 193, 249, 0.15); }
-        /* line 753, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+        /* line 765, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r2 .chapcovered {
           height: 5px;
           float: left;
@@ -754,7 +766,7 @@ body {
           border-radius: 1px;
           background: #28c1f9; }
 
-/* line 766, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+/* line 778, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .leaderboard .header {
   height: 8vh;
   background: #64C56E;
@@ -763,14 +775,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px; }
-  /* line 774, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 786, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard .header h1 {
     font-family: 'ProductSans-Regular';
     font-size: 22px;
     color: #FFFFFF;
     font-weight: normal;
     letter-spacing: 0.3px; }
-  /* line 781, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 793, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard .header input {
     opacity: 0;
     padding: 6px;
@@ -783,10 +795,10 @@ body {
     transition: all 0.2s ease-in;
     display: none; }
 
-/* line 794, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+/* line 806, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .leaderboard div {
   padding: 16px; }
-  /* line 796, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 808, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard div h2 {
     font-family: 'OpenSans-Regular';
     font-size: 12px;
@@ -795,22 +807,22 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px; }
-  /* line 805, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 817, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard div table {
     background: #fff;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-    /* line 810, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 822, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr td {
       font-family: 'OpenSans-Regular';
       font-size: 14px;
       color: #616161;
       letter-spacing: 0.2px;
       padding: 24px 0px 24px 24px; }
-    /* line 817, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 829, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr .name {
       font-family: 'OpenSans-Semibold'; }
-    /* line 821, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 833, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr:nth-child(odd) {
       background-color: rgba(100, 197, 110, 0.05); }
 
