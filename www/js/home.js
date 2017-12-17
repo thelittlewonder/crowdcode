@@ -157,28 +157,30 @@ $('#ansv1').hammer().on('tap', function (e) {
     }, 300);
 });
 
-document.getElementById('topicsearch').addEventListener('keyup', function () {
-    let filter = (document.getElementById('topicsearch').value);
-    filter = filter.toLowerCase();
-    let rows = document.getElementsByClassName('module');
-    let i, a;
-    for (i = 0; i < rows.length; i++) {
-        a = rows[i].getElementsByTagName('h1')[0];
-        if (a.innerHTML.toLowerCase().indexOf(filter) > -1) {
-            rows[i].style.display = "";
-        } else {
-            rows[i].style.display = "none";
+if (document.getElementById('topicsearch') !== null) {
+    document.getElementById('topicsearch').addEventListener('keyup', function () {
+        let filter = (document.getElementById('topicsearch').value);
+        filter = filter.toLowerCase();
+        let rows = document.getElementsByClassName('module');
+        let i, a;
+        for (i = 0; i < rows.length; i++) {
+            a = rows[i].getElementsByTagName('h1')[0];
+            if (a.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
         }
-    }
-    if(filter.length===0){
-        window.location.reload();
-    }
-});
-$('#trigger').hammer().on('tap', function () {
-    $('.header h1').css('display', 'none');
-    $('.header div').css('display', 'none');
-    $('#topicsearch').css('display', 'block');
-    setInterval(function () {
-        $('#topicsearch').css('opacity', 1);
+        if (filter.length === 0) {
+            window.location.reload();
+        }
     });
-});
+    $('#trigger').hammer().on('tap', function () {
+        $('.header h1').css('display', 'none');
+        $('.header div').css('display', 'none');
+        $('#topicsearch').css('display', 'block');
+        setInterval(function () {
+            $('#topicsearch').css('opacity', 1);
+        });
+    });
+}
