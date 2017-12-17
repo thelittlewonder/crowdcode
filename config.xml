@@ -17,9 +17,9 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon src="res/android/mdpi.png" density="mdpi" />
-        <icon src="res/android/hdpi.png" density="hdpi" />
-        <icon src="res/android/xhdpi.png" density="xhdpi" />
+        <icon density="mdpi" src="res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />

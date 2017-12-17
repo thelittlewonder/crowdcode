@@ -1,6 +1,6 @@
 html {
--ms-touch-action: manipulation;
-touch-action: manipulation;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
 }
 
 body {
@@ -412,6 +412,9 @@ $n:0;
     overflow-x: hidden;
     overflow-y: scroll;
     .cards {
+        transition-property: all;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-in;
         background-color: #28C1F9;
         height: 100vh;
         .action {
@@ -419,10 +422,21 @@ $n:0;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            p {
+                font-family: 'ProductSans-Regular';
+                font-size: 22px;
+                color: #FFFFFF;
+                display: none;
+                opacity: 0;
+                transition-property: all;
+                transition-duration: 0.25s;
+                transition-timing-function: ease-in;
+            }
             .bars {
                 display: flex;
                 flex-direction: row;
                 .bar {
+                    transition: all 0.25s ease-in-out;
                     background: #FFFFFF;
                     border-radius: 1px;
                     height: 2px;
@@ -459,7 +473,18 @@ $n:0;
                         $n: $n+1;
                     }
                 }
+                #end {
+                    font-family: 'OpenSans-Semibold';
+                    font-size: 24px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    position: absolute;
+                    left: 4%;
+                    margin-top: 20vh;
+                    opacity: 0;
+                }
                 .card {
+                    transition: all 0.2s ease-out;
                     padding: 16px;
                     background: #FFFFFF;
                     width: 70%;
@@ -492,11 +517,100 @@ $n:0;
                         padding: 12px;
                         background: #64C56E;
                         border-radius: 3px;
-                        font-family: OpenSans-Semibold;
+                        font-family: 'OpenSans-Semibold';
                         font-size: 14px;
                         color: #FFFFFF;
+                        margin-bottom: 16px;
                     }
                 }
+            }
+        }
+        .question {
+            opacity: 0;
+            transition: all 0.25s ease-in;
+            padding: 16px;
+            background: #FFFFFF;
+            width: 70%;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.50);
+            text-align: center;
+            h1 {
+                text-align: left;
+                font-family: 'OpenSans-Semibold';
+                font-size: 14px;
+                color: #616161;
+                line-height: 22px;
+            }
+            .option {
+                transition: all 0.25s ease-in-out;
+                left: 0;
+                border: 1px solid #E3E3E3;
+                border-radius: 1px;
+                padding: 12px;
+                text-align: left;
+                margin: 16px 0;
+                font-family: 'OpenSans-Regular';
+                font-size: 14px;
+                color: #616161;
+            }
+            .got {
+                border-color: #28C1F9;
+                color: #28C1F9;
+            }
+            button {
+                background: #FFFFFF;
+                border: 1px solid #64C56E;
+                border-radius: 3px;
+                padding: 12px;
+                font-family: 'OpenSans-Semibold';
+                font-size: 14px;
+                color: #76C87F;
+                line-height: 14px;
+            }
+        }
+        .result {
+            margin-top: 10vh;
+            text-align: center;
+            padding: 16px;
+            img {
+                margin: 72px 0 16px 0;
+            }
+            h1 {
+                margin-top: 32px;
+                font-family: 'OpenSans-Semibold';
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+            .option {
+                font-family: 'OpenSans-Semibold';
+            }
+            p {
+                font-family: 'OpenSans-Regular';
+                font-size: 12px;
+                line-height: 18px;
+                text-align: left;
+                color: #616161;
+                margin-bottom: 4px;
+            }
+        }
+        .sahi {
+            h1 {
+                color: #64C56E;
+            }
+            .option {
+                border-color: #64C56E;
+                color: #64C56E;
+            }
+        }
+        .galat {
+            h1 {
+                color: #ED4C4C;
+            }
+            .option {
+                border-color: #ED4C4C;
+                color: #ED4C4C;
             }
         }
     }

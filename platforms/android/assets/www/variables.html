@@ -91,7 +91,8 @@
         <div class="cards">
             <div class="action">
                 <a href="home.html"><img src="img/arrow.svg"></a>
-                <div class="bars">
+                <p id="test">Test Your Knowledge</p>
+                <div class="bars" id="bars">
                     <div class="bar current"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -116,16 +117,37 @@
                     <card class="card" id="pane3">
                         <h1>The Concept of Variables</h1>
                         <hr class="divider">
-                        <img src="img/variable-2.svg">
-                        <p>You can change the contents of the bowl to a vegetable. So now the bowl contains vegetable, the value of the variable (bowl) is now updated.</p>
+                        <img src="img/variable-3.svg">
+                        <p>Every variable will have a name. For example, we can have a variable named myBowl.</p>
                     </card>
                     <card class="card" id="pane4">
                         <h1>Summary</h1>
                         <hr class="divider">
-                        <p>The term floating point is derived from the fact that there is no fixed number of digits before and after the decimal point; that is, the decimal point can float.</p>
-                        <button>Test your Knowledge</button>
+                        <p>A variable is a good way to store information while making it easy to refer to that information in our code later.</p>
+                        <button id="testvariables">Test your Knowledge</button>
                     </card>
+                    <h1 id="end">That's All in this chapter!</h1>
                 </div>
+            </div>
+            <div class="question" id="v1">
+                <h1>Which of the following is not a floating point number?</h1>
+                <div id="v1a" class="option">A. 210.5628</div>
+                <div id="v1b" class="option">B. 12,457</div>
+                <div id="v1c" class="option">C. 1.6x10e-7</div>
+                <div id="v1d" class="option">D. 0.0971</div>
+                <button id="ansv1">Submit</button>
+            </div>
+            <div class="question result sahi">
+                <img src="img/right.svg">
+                <h1>That's Correct!</h1>
+                <div class="option">B. 12,457</div>
+                <p>Clearly 12,457 is an integer and not a floating point number. Always look for a decimal while picking out floating point numbers</p>
+            </div>
+            <div class="question result galat">
+                <img src="img/wrong.svg">
+                <h1>That's Wrong!</h1>
+                <div class="option">A. 210.5648</div>
+                <p>Clearly 12,457 is an integer and not a floating point number. Always look for a decimal while picking out floating point numbers</p>
             </div>
         </div>
     </div>
