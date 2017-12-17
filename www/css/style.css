@@ -770,11 +770,23 @@ body {
     color: #FFFFFF;
     font-weight: normal;
     letter-spacing: 0.3px; }
+  /* line 781, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  .leaderboard .header input {
+    opacity: 0;
+    padding: 6px;
+    font-size: 12px;
+    width: 60%;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    font-family: 'OpenSans-Light';
+    transition: all 0.2s ease-in;
+    display: none; }
 
-/* line 782, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+/* line 794, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .leaderboard div {
   padding: 16px; }
-  /* line 784, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 796, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard div h2 {
     font-family: 'OpenSans-Regular';
     font-size: 12px;
@@ -783,22 +795,22 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px; }
-  /* line 793, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+  /* line 805, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard div table {
     background: #fff;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-    /* line 798, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 810, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr td {
       font-family: 'OpenSans-Regular';
       font-size: 14px;
       color: #616161;
       letter-spacing: 0.2px;
       padding: 24px 0px 24px 24px; }
-    /* line 805, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 817, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr .name {
       font-family: 'OpenSans-Semibold'; }
-    /* line 809, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+    /* line 821, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr:nth-child(odd) {
       background-color: rgba(100, 197, 110, 0.05); }
 
