@@ -400,5 +400,48 @@ body {
     font-family: 'OpenSans-Regular';
     font-size: 12px;
     color: #616161; }
+  /* line 429, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/ios/www/css/style.scss */
+  .root .module {
+    text-align: left;
+    margin: 0px 16px 24px 16px;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
+    /* line 435, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/ios/www/css/style.scss */
+    .root .module h1 {
+      font-family: 'OpenSans-Semibold';
+      font-size: 14px;
+      color: #616161;
+      margin-bottom: 12px; }
+    /* line 441, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/ios/www/css/style.scss */
+    .root .module div {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 12px; }
+      /* line 445, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/ios/www/css/style.scss */
+      .root .module div p {
+        margin-left: 8px;
+        font-family: 'OpenSans-Regular';
+        font-size: 12px;
+        color: #828282; }
+    /* line 452, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/ios/www/css/style.scss */
+    .root .module .chaptotal {
+      width: 100%;
+      height: 8px;
+      border-radius: 2px; }
+    /* line 457, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/ios/www/css/style.scss */
+    .root .module .chapcovered {
+      height: 8px;
+      float: left;
+      transition: all 1s ease-in;
+      border-radius: 2px; }
+    /* line 463, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/ios/www/css/style.scss */
+    .root .module h4 {
+      font-family: 'OpenSans-Regular';
+      font-size: 8px;
+      color: #616161;
+      opacity: 0.8;
+      letter-spacing: 0.5px;
+      text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
