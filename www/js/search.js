@@ -20,9 +20,3 @@ $('#trigger').hammer().on('tap', function () {
     });
     document.getElementById('leadsearch').focus();
 });
-
-
-
-$.get('https://crowdcode.eu-de.mybluemix.net/api/leaderboard', function (data) {
-    console.log(data);
-})
