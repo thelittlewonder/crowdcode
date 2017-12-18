@@ -23,8 +23,9 @@ $('.splash').hammer().on("tap", function (ev) {
     $('.container').css('opacity', 1);
 });
 
-document.addEventListener('deviceready', function(){
-StatusBar.backgroundColorByHexString('#64C56E');});
+document.addEventListener('deviceready', function () {
+    StatusBar.backgroundColorByHexString('#64C56E');
+});
 
 //splash
 
@@ -138,21 +139,23 @@ $('#male').hammer().on("tap", function (ev) {
 
 var check1, check2, check3 = 0;
 var formcheck = window.setInterval(function () {
-    if (check1 + check2 + check3 === 3) {
-        document.getElementById('chalo').classList.remove('dead');
-        document.getElementById('chalo').classList.add('alive');
-    } else {
-        document.getElementById('chalo').classList.remove('alive');
-        document.getElementById('chalo').classList.add('dead');
-    }
-    if (gender.length > 2) {
-        check1 = 1;
-    }
-    if ((document.getElementById('first').value).length > 1) {
-        check2 = 1;
-    }
-    if ((document.getElementById('last').value).length > 1) {
-        check3 = 1;
+    if (document.getElementById('chalo') !== null) {
+        if (check1 + check2 + check3 === 3) {
+            document.getElementById('chalo').classList.remove('dead');
+            document.getElementById('chalo').classList.add('alive');
+        } else {
+            document.getElementById('chalo').classList.remove('alive');
+            document.getElementById('chalo').classList.add('dead');
+        }
+        if (gender.length > 2) {
+            check1 = 1;
+        }
+        if ((document.getElementById('first').value).length > 1) {
+            check2 = 1;
+        }
+        if ((document.getElementById('last').value).length > 1) {
+            check3 = 1;
+        }
     }
 }, 100);
 
