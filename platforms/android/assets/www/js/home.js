@@ -2,11 +2,6 @@ document.addEventListener('deviceready', function () {
     StatusBar.backgroundColorByHexString('#28C1F9');
 });
 
-
-$.get('https://crowdcode.eu-de.mybluemix.net/api/joke', function (data) {
-    console.log('data');
-})
-
 var currentCard = 1;
 if (document.getElementById('bars') !== null) {
     var bars = document.getElementById('bars').childNodes;
