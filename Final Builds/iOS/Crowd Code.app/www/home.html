@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://crowdcode.eu-de.mybluemix.net/api/ data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="root">
+        <div class="header">
+            <img src="img/search.svg" id="trigger">
+            <h1>Crowd Code</h1>
+            <input type="text" id="topicsearch" style="text-decoration: none;" required autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Start typing the name of the topic..." autofocus>
+            <div>
+                <a href="leaderboard.html"><img src="img/leaderboard.svg" id="leaderboard"></a>
+                <img src="img/profile.svg" id="profile">
+            </div>
+        </div>
+        <h3>Featured Programming Concepts</h3>
+        <a href="variables.html">
+            <div class="module" id="variables" data="#28C1F9">
+                <h1>Variables</h1>
+                <div>
+                    <img src="img/module1.svg">
+                    <p>4 lessons • 3 quizzes</p>
+                </div>
+                <div class="chaptotal" style="background: rgba(40, 193, 249, 0.15);">
+                    <div class="chapcovered" style="width: 30%;
+                background: rgba(40, 193, 249, 1);"></div>
+                </div>
+                <h4>Covered: 24%</h4>
+            </div>
+        </a>
+        <div class="module" id="datatypes" data="#F79921">
+            <h1>Data Types</h1>
+            <div>
+                <img src="img/module2.svg">
+                <p>3 lessons • 2 quizzes</p>
+            </div>
+            <div class="chaptotal" style="background: rgba(247, 153, 33, 0.15);">
+                <div class="chapcovered" style="width: 10%;
+                background: rgba(247, 153, 33, 1);"></div>
+            </div>
+            <h4>Covered: 12%</h4>
+        </div>
+        <a href="#">
+            <div class="module" id="condtionals" data="#8985DB">
+                <h1>Conditionals</h1>
+                <div>
+                    <img src="img/module3.svg">
+                    <p>6 lessons • 4 quizzes</p>
+                </div>
+                <div class="chaptotal" style="background: rgba(137, 133, 219, 0.15);">
+                    <div class="chapcovered" style="width: 3%;
+                background: rgba(137, 133, 219, 1);"></div>
+                </div>
+                <h4>Covered: 1%</h4>
+            </div>
+        </a>
+        <div class="module" id="arrays" data="#00D390">
+            <h1>Arrays</h1>
+            <div>
+                <img src="img/module4.svg">
+                <p>3 lessons • 3 quizzes</p>
+            </div>
+            <div class="chaptotal" style="background: rgba(0, 211, 144, 0.15);">
+                <div class="chapcovered" style="width: 3%;
+                background: rgba(0, 211, 144, 1);"></div>
+            </div>
+            <h4>Covered: 1%</h4>
+        </div>
+
+        <div class="module" id="ipop" data="#287DF9">
+            <h1>Input and Output</h1>
+            <div>
+                <img src="img/module5.svg">
+                <p>4 lessons • 5 quizzes</p>
+            </div>
+            <div class="chaptotal" style="background: rgba(40,125,249,0.15);">
+                <div class="chapcovered" style="width: 3%;
+background: rgba(40,125,249,1);"></div>
+            </div>
+            <h4>Covered: 1%</h4>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <script type="text/javascript" src="js/hammer-time.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hammer.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+</body>
+
+</html>
