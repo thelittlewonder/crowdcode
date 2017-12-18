@@ -3,7 +3,7 @@
 
 <head>
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' https://crowdcode.eu-de.mybluemix.net/api/joke data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -27,7 +27,7 @@
                 <img src="img/arrow.svg" style="opacity:0;">
             </div>
             <div id="cardsContainer" class="cardsContainer">
-                <div>
+                <div  class="cardswrapper">
                     <card class="card" id="pane1">
                         <h1>The Concept of Variables</h1>
                         <hr class="divider">
@@ -56,24 +56,24 @@
                 </div>
             </div>
             <div class="question" id="v1">
-                <h1>Which of the following is not a floating point number?</h1>
-                <div id="v1a" class="option">A. 210.5628</div>
-                <div id="v1b" class="option">B. 12,457</div>
-                <div id="v1c" class="option">C. 1.6x10e-7</div>
-                <div id="v1d" class="option">D. 0.0971</div>
+                <h1>Can we update the value of a variable?</h1>
+                <div id="v1a" class="option">A. True</div>
+                <div id="v1b" class="option">B. False</div>
+                <div id="v1c" class="option">C. Sometimes</div>
+                <div id="v1d" class="option">D. Only if it is a number</div>
                 <button id="ansv1">Submit</button>
             </div>
             <div class="question result sahi">
                 <img src="img/right.svg">
-                <h1>That's Correct!</h1>
-                <div class="option">B. 12,457</div>
-                <p>Clearly 12,457 is an integer and not a floating point number. Always look for a decimal while picking out floating point numbers</p>
+                <h1>That's Correct!<br><br>+10 Points</h1>
+                <div class="option">A. True</div>
+                <p>We can always update the value of a variable irrespective of its data type.</p>
             </div>
             <div class="question result galat">
                 <img src="img/wrong.svg">
                 <h1>That's Wrong!</h1>
-                <div class="option">A. 210.5648</div>
-                <p>Clearly 12,457 is an integer and not a floating point number. Always look for a decimal while picking out floating point numbers</p>
+                <div class="option" id="itou"></div>
+                <p>We can always update the value of a variable.</p>
             </div>
         </div>
     </div>

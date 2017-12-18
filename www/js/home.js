@@ -1,6 +1,7 @@
 document.addEventListener('deviceready', function () {
     StatusBar.backgroundColorByHexString('#28C1F9');
 });
+
 var currentCard = 1;
 if (document.getElementById('bars') !== null) {
     var bars = document.getElementById('bars').childNodes;

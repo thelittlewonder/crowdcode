@@ -8,6 +8,12 @@ body {
     background-color: #fafafa;
 }
 
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: rgba(#fff, 0.5);
+}
+
 @font-face {
     font-family: 'OpenSans-Bold';
     src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans-bold-webfont.woff') format('woff');
@@ -38,8 +44,7 @@ body {
 
 @font-face {
     font-family: 'ProductSans-Regular';
-    src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'),
-         url('../fonts/product_sans_regular-webfont.woff') format('woff');
+    src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'), url('../fonts/product_sans_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -485,8 +490,8 @@ $n:0;
                 }
                 #end {
                     margin: 0;
-                    left:-21%;
-                    right:0;
+                    left: -21%;
+                    right: 0;
                     font-family: 'OpenSans-Semibold';
                     font-size: 24px;
                     color: #FFFFFF;
@@ -627,7 +632,7 @@ $n:0;
         }
     }
     .header {
-        height: 8vh;
+        height: 10vh;
         background: #64C56E;
         display: flex;
         flex-direction: row;
@@ -788,7 +793,7 @@ $n:0;
 
 .leaderboard {
     .header {
-        height: 8vh;
+        height: 10vh;
         background: #64C56E;
         display: flex;
         flex-direction: row;
@@ -806,7 +811,7 @@ $n:0;
             opacity: 0;
             padding: 6px;
             font-size: 12px;
-            width: 60%;
+            width: 70%;
             color: #fff;
             background-color: rgba(#fff, 0.2);
             border-radius: 2px;

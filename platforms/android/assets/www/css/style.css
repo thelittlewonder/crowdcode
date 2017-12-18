@@ -1,12 +1,17 @@
-/* line 1, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 1, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 html {
   -ms-touch-action: manipulation;
   touch-action: manipulation; }
 
-/* line 6, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 6, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 body {
   transition: all 0.25s ease-in-out;
   background-color: #fafafa; }
+
+/* line 12, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgba(255, 255, 255, 0.5); }
 
 @font-face {
   font-family: 'OpenSans-Bold';
@@ -38,28 +43,28 @@ body {
   font-weight: normal;
   font-style: normal; }
 
-/* line 48, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 53, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .splash {
   height: 100vh;
   background: url(../img/splash.png);
   text-align: center;
   margin: 0 auto;
   transition: all 0.2s ease-out; }
-  /* line 54, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 59, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .splash img {
     margin-top: 40vh; }
-  /* line 57, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 62, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .splash h1 {
     margin-top: 16px;
     font-family: OpenSans-Regular;
     font-size: 13.88px;
     color: #616161; }
 
-/* line 66, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 71, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .signup {
   transition: all 0.25s ease-in-out; }
 
-/* line 70, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 75, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .container {
   opacity: 0;
   margin-top: 10vh;
@@ -67,18 +72,18 @@ body {
   height: 100%;
   text-align: center;
   transition: all 1.5s ease-in; }
-  /* line 77, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 82, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .container h1 {
     font-family: OpenSans-Semibold;
     font-size: 20px;
     color: #343434;
     line-height: 36px; }
-  /* line 83, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 88, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .container #slidingimg {
     text-align: center;
     margin: 0 auto;
     height: 300px; }
-  /* line 89, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 94, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .container .control .slider {
     position: absolute;
     left: 38vw;
@@ -89,7 +94,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-    /* line 99, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 104, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .container .control .slider .slide {
       border-radius: 50%;
       height: 10px;
@@ -97,26 +102,26 @@ body {
       margin: 0 8px;
       background: #E3E3E3;
       transition: all 0.25s ease-in-out; }
-    /* line 107, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 112, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .container .control .slider .active {
       border-radius: 50%;
       height: 14px;
       width: 14px;
       background: #BDBDBD; }
-  /* line 114, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 119, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .container .control #continue {
     position: absolute;
     width: 100%;
     bottom: 60px;
     left: 0; }
-    /* line 119, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 124, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .container .control #continue label {
       margin-top: 18px;
       font-family: OpenSans-Light;
       font-size: 9px;
       display: block;
       color: #343434; }
-    /* line 127, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 132, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .container .control #continue a button {
       padding: 12px;
       background: #FFFFFF;
@@ -126,20 +131,20 @@ body {
       font-family: OpenSans-Semibold;
       font-size: 18px;
       color: #565656; }
-      /* line 136, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 141, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .container .control #continue a button img {
         vertical-align: middle;
         margin-right: 16px;
         height: 18px;
         width: 18px; }
 
-/* line 150, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 155, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .signup .gradient {
   transition: all 0.25s ease-in-out;
   padding: 48px 0;
   text-align: center;
   background-image: linear-gradient(-180deg, #65C86F 0%, #60BA69 100%); }
-  /* line 152, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 157, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .gradient .total {
     width: 100px;
     height: 4px;
@@ -148,7 +153,7 @@ body {
     margin-bottom: 24px;
     background: rgba(255, 255, 255, 0.39);
     border-radius: 100px; }
-  /* line 161, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 166, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .gradient .part {
     width: 25px;
     height: 4px;
@@ -158,7 +163,7 @@ body {
     margin-bottom: 24px;
     background: white;
     border-radius: 100px; }
-  /* line 176, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 181, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .gradient h1 {
     transition: all 0.5s ease-out;
     font-family: OpenSans-Semibold;
@@ -167,20 +172,20 @@ body {
     display: inline-block;
     vertical-align: middle; }
 
-/* line 185, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 190, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .signup .background {
   background: #FAFAFA;
   border-radius: 10px; }
-  /* line 186, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 191, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background div {
     text-align: center; }
-    /* line 188, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 193, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background div a {
       text-decoration: underline;
       font-family: 'OpenSans-Regular';
       font-size: 14px;
       color: #979797; }
-  /* line 197, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 202, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .dead, .signup .background .alive {
     position: absolute;
     bottom: 0;
@@ -193,48 +198,48 @@ body {
     background: #F1F1F1;
     pointer-events: none;
     transition: all 0.1s ease-in; }
-  /* line 210, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 215, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .alive {
     color: #fff;
     pointer-events: auto;
     background-color: #64C56E; }
-  /* line 216, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 221, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background h1 {
     margin-bottom: 5vh;
     font-family: 'OpenSans-Regular';
     font-size: 16px;
     color: #616161; }
-  /* line 222, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 227, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .sex {
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
-    /* line 227, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 232, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .gender {
       display: flex;
       flex-direction: column; }
-      /* line 230, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 235, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .sex .gender p {
         margin-top: 16px;
         font-size: 12px;
         transition: all 0.3s ease-in-out; }
-      /* line 235, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 240, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .sex .gender img {
         transition: all 0.3s ease-in-out; }
-    /* line 240, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 245, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .nay img {
       filter: grayscale(1);
       opacity: 0.6; }
-    /* line 244, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 249, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .nay p {
       font-family: OpenSans-Regular;
       color: #B5B5B5; }
-    /* line 250, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 255, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .sex .yay p {
       font-family: OpenSans-Semibold;
       opacity: #616161; }
-  /* line 256, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 261, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .agegroup {
     margin-top: 5vh;
     display: flex;
@@ -242,7 +247,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center; }
-    /* line 263, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 268, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .agegroup .grp {
       display: inline-block;
       text-align: center;
@@ -256,12 +261,12 @@ body {
       font-size: 14px;
       color: #A6A6A6;
       transition: all 0.25s ease-in; }
-    /* line 277, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 282, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .agegroup .zinda {
       border: 1px solid #62BF6B;
       box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
       color: #61BE6B; }
-  /* line 283, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 288, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .jobgroup {
     justify-content: center;
     margin-top: 5vh;
@@ -269,37 +274,37 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    /* line 290, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 295, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .jobgroup .job {
       margin: 12px; }
-      /* line 292, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 297, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .jobgroup .job img {
         transition: all 0.25s ease-in-out;
         opacity: 0.5;
         filter: grayscale(1); }
-      /* line 297, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 302, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .jobgroup .job p {
         margin-top: 10px;
         transition: all 0.25s ease-in-out;
         font-family: 'OpenSans-Regular';
         font-size: 12px;
         color: #B5B5B5; }
-    /* line 306, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 311, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .jobgroup .mera img {
       opacity: 1;
       filter: grayscale(0); }
-    /* line 310, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 315, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .jobgroup .mera p {
       font-family: OpenSans-Semibold;
       color: #616161; }
-  /* line 316, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 321, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .signup .background .grpgroup {
     overflow-y: scroll; }
-    /* line 318, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 323, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .grpgroup h1 {
       text-align: left;
       margin-left: 16px; }
-    /* line 322, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 327, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .grpgroup .grp {
       border: 1px solid transparent;
       transition: all 0.25s ease-in-out;
@@ -308,24 +313,24 @@ body {
       background: #FFFFFF;
       box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
       text-align: left; }
-      /* line 330, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 335, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .grpgroup .grp div {
         display: flex;
         align-items: center;
         justify-content: space-between; }
-        /* line 334, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 339, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .signup .background .grpgroup .grp div h2 {
           font-family: 'OpenSans-Semibold';
           font-size: 16px;
           color: #616161;
           display: inline-block; }
-        /* line 340, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 345, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .signup .background .grpgroup .grp div h4 {
           font-family: 'OpenSans-Regular';
           font-size: 10px;
           color: #616161;
           display: inline-block; }
-      /* line 347, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 352, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .grpgroup .grp p {
         margin-top: 8px;
         font-family: 'OpenSans-Regular';
@@ -333,42 +338,42 @@ body {
         color: #A9A9A9;
         line-height: 16px;
         text-align: left; }
-    /* line 356, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 361, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .grpgroup .meragrp {
       border: 1px solid #64C56E; }
-      /* line 358, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 363, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .grpgroup .meragrp h2 {
         color: #64C56E !important; }
-    /* line 363, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 368, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .grpgroup .recommended h1 {
       font-family: 'OpenSans-Regular';
       font-size: 12px;
       color: #61BD6A;
       margin-bottom: 8px; }
-    /* line 370, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 375, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .signup .background .grpgroup .other {
       overflow-y: scroll; }
-      /* line 372, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 377, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .signup .background .grpgroup .other h1 {
         font-family: 'OpenSans-Regular';
         font-size: 12px;
         color: #616161;
         margin-bottom: 8px; }
 
-/* line 384, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 389, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .loader {
   padding: 24px;
   padding-top: 45vh;
   margin: 0 auto;
   text-align: center; }
-  /* line 389, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 394, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .loader h1 {
     text-align: center;
     font-family: 'OpenSans-Semibold';
     color: #fff;
     font-size: 16px;
     line-height: 24px; }
-  /* line 396, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 401, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .loader .progress {
     width: 150px;
     height: 5px;
@@ -377,7 +382,7 @@ body {
     margin-bottom: 24px;
     background: rgba(255, 255, 255, 0.39);
     border-radius: 100px; }
-  /* line 405, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 410, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .loader .progresspart {
     width: 0px;
     height: 5px;
@@ -388,25 +393,25 @@ body {
     background: white;
     border-radius: 100px; }
 
-/* line 420, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 425, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .root {
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: scroll; }
-  /* line 424, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 429, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root .cards {
     transition-property: all;
     transition-duration: 0.25s;
     transition-timing-function: ease-in;
     background-color: #28C1F9;
     height: 100vh; }
-    /* line 430, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 435, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .action {
       padding: 40px 24px 0px 24px;
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      /* line 435, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 440, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .action p {
         font-family: 'ProductSans-Regular';
         font-size: 22px;
@@ -416,11 +421,11 @@ body {
         transition-property: all;
         transition-duration: 0.25s;
         transition-timing-function: ease-in; }
-      /* line 445, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 450, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .action .bars {
         display: flex;
         flex-direction: row; }
-        /* line 448, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 453, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .cards .action .bars .bar {
           transition: all 0.25s ease-in-out;
           background: #FFFFFF;
@@ -429,18 +434,18 @@ body {
           width: 2em;
           margin: 8px;
           opacity: 0.5; }
-        /* line 457, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 462, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .cards .action .bars .current {
           opacity: 1; }
-    /* line 462, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 467, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .cardsContainer {
       text-align: center;
       margin-top: 10vh; }
-      /* line 465, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 470, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .cardsContainer div {
         position: relative;
         left: 12%; }
-        /* line 468, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 473, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .cards .cardsContainer div card {
           position: absolute;
           top: 0;
@@ -448,42 +453,42 @@ body {
           border-radius: 4px;
           transform-origin: center;
           transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65); }
-          /* line 476, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 481, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div card:nth-child(1) {
             z-index: 4;
             top: 0px;
             transform-origin: top;
             transform: scale(1);
             opacity: 1; }
-          /* line 476, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 481, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div card:nth-child(2) {
             z-index: 3;
             top: -8px;
             transform-origin: top;
             transform: scale(0.95);
             opacity: 0.92; }
-          /* line 476, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 481, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div card:nth-child(3) {
             z-index: 2;
             top: -16px;
             transform-origin: top;
             transform: scale(0.9);
             opacity: 0.84; }
-          /* line 476, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 481, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div card:nth-child(4) {
             z-index: 1;
             top: -24px;
             transform-origin: top;
             transform: scale(0.85);
             opacity: 0.76; }
-          /* line 476, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 481, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div card:nth-child(5) {
             z-index: 0;
             top: -32px;
             transform-origin: top;
             transform: scale(0.8);
             opacity: 0.68; }
-        /* line 486, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 491, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .cards .cardsContainer div #end {
           margin: 0;
           left: -21%;
@@ -495,7 +500,7 @@ body {
           position: absolute;
           margin-top: 20vh;
           opacity: 0; }
-        /* line 498, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 503, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .cards .cardsContainer div .card {
           transition: all 0.2s ease-out;
           padding: 16px;
@@ -504,29 +509,29 @@ body {
           max-width: 400px;
           margin: 0 auto;
           box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-          /* line 506, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 511, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div .card h1 {
             font-family: 'OpenSans-Regular';
             font-size: 14px;
             color: #616161;
             line-height: 22px; }
-          /* line 512, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 517, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div .card img {
             margin: 2vh; }
-          /* line 515, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 520, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div .card hr {
             border: 1px solid #28c1f9;
             width: 20%;
             color: #28C1F9;
             margin-bottom: 2vh; }
-          /* line 521, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 526, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div .card p {
             font-family: 'OpenSans-Light';
             font-size: 1.1em;
             color: #616161;
             line-height: 28px;
             margin: 2vh 0px 8vh 0px; }
-          /* line 528, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 533, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .cards .cardsContainer div .card button {
             padding: 12px;
             background: #64C56E;
@@ -535,7 +540,7 @@ body {
             font-size: 14px;
             color: #FFFFFF;
             margin-bottom: 16px; }
-    /* line 540, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 545, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .question {
       opacity: 0;
       transition: all 0.25s ease-in;
@@ -546,14 +551,14 @@ body {
       margin: 0 auto;
       box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
       text-align: center; }
-      /* line 550, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 555, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .question h1 {
         text-align: left;
         font-family: 'OpenSans-Semibold';
         font-size: 14px;
         color: #616161;
         line-height: 22px; }
-      /* line 557, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 562, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .question .option {
         transition: all 0.25s ease-in-out;
         left: 0;
@@ -565,11 +570,11 @@ body {
         font-family: 'OpenSans-Regular';
         font-size: 14px;
         color: #616161; }
-      /* line 569, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 574, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .question .got {
         border-color: #28C1F9;
         color: #28C1F9; }
-      /* line 573, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 578, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .question button {
         background: #FFFFFF;
         border: 1px solid #64C56E;
@@ -579,25 +584,25 @@ body {
         font-size: 14px;
         color: #76C87F;
         line-height: 14px; }
-    /* line 584, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 589, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .result {
       margin-top: 10vh;
       text-align: center;
       padding: 16px; }
-      /* line 588, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 593, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .result img {
         margin: 72px 0 16px 0; }
-      /* line 591, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 596, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .result h1 {
         margin-top: 32px;
         font-family: 'OpenSans-Semibold';
         font-size: 24px;
         text-align: center;
         margin-bottom: 8px; }
-      /* line 598, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 603, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .result .option {
         font-family: 'OpenSans-Semibold'; }
-      /* line 601, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 606, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .cards .result p {
         font-family: 'OpenSans-Regular';
         font-size: 12px;
@@ -605,40 +610,40 @@ body {
         text-align: left;
         color: #616161;
         margin-bottom: 4px; }
-    /* line 611, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 616, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .sahi h1 {
       color: #64C56E; }
-    /* line 614, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 619, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .sahi .option {
       border-color: #64C56E;
       color: #64C56E; }
-    /* line 620, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 625, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .galat h1 {
       color: #ED4C4C; }
-    /* line 623, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 628, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .cards .galat .option {
       border-color: #ED4C4C;
       color: #ED4C4C; }
-  /* line 629, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 634, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root .header {
-    height: 8vh;
+    height: 10vh;
     background: #64C56E;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px; }
-    /* line 637, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 642, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .header h1 {
       font-family: 'ProductSans-Regular';
       font-size: 22px;
       color: #FFFFFF;
       font-weight: normal;
       letter-spacing: 0.3px; }
-    /* line 645, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 650, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .header div #profile {
       margin-left: 20px; }
-    /* line 649, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 654, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .header input {
       opacity: 0;
       padding: 6px;
@@ -650,48 +655,48 @@ body {
       font-family: 'OpenSans-Light';
       transition: all 0.2s ease-in;
       display: none; }
-  /* line 662, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 667, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root h3 {
     padding: 16px;
     font-family: 'OpenSans-Regular';
     font-size: 12px;
     color: #616161; }
-  /* line 668, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 673, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root .module {
     text-align: left;
     margin: 0px 16px 24px 16px;
     padding: 16px;
     background: #FFFFFF;
     box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-    /* line 674, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 679, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module h1 {
       font-family: 'OpenSans-Semibold';
       font-size: 14px;
       color: #616161;
       margin-bottom: 12px; }
-    /* line 680, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 685, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module div {
       display: flex;
       flex-direction: row;
       margin-bottom: 12px; }
-      /* line 684, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 689, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .module div p {
         margin-left: 8px;
         font-family: 'OpenSans-Regular';
         font-size: 12px;
         color: #828282; }
-    /* line 691, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 696, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module .chaptotal {
       width: 100%;
       height: 8px;
       border-radius: 2px; }
-    /* line 696, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 701, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module .chapcovered {
       height: 8px;
       float: left;
       transition: all 1s ease-in;
       border-radius: 2px; }
-    /* line 702, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 707, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .module h4 {
       font-family: 'OpenSans-Regular';
       font-size: 8px;
@@ -699,17 +704,17 @@ body {
       opacity: 0.8;
       letter-spacing: 0.5px;
       text-transform: uppercase; }
-  /* line 711, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 716, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .root .content {
     padding: 16px; }
-    /* line 713, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 718, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .content p {
       font-family: 'OpenSans-Regular';
       font-size: 12px;
       color: #616161;
       line-height: 20px;
       margin-bottom: 4px; }
-    /* line 720, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 725, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .root .content .lesson {
       margin: 20px 0;
       display: flex;
@@ -717,24 +722,24 @@ body {
       padding: 12px;
       background: #FFFFFF;
       box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-      /* line 727, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 732, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .content .lesson .r0 {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between; }
-        /* line 732, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 737, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r0 h4 {
           font-family: 'OpenSans-Regular';
           font-size: 8px;
           color: #616161;
           letter-spacing: 0.2px; }
-        /* line 738, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 743, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r0 div {
           display: flex;
           flex-direction: row;
           align-items: center; }
-          /* line 742, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+          /* line 747, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
           .root .content .lesson .r0 div p {
             font-family: 'OpenSans-Regular';
             font-size: 8px;
@@ -743,18 +748,18 @@ body {
             margin: 0;
             padding: 0;
             margin-left: 4px; }
-      /* line 753, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 758, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .content .lesson h2 {
         font-family: 'OpenSans-Semibold';
         margin: 8px 0;
         font-size: 14px;
         color: #616161; }
-      /* line 759, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+      /* line 764, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
       .root .content .lesson .r2 {
         display: flex;
         flex-direction: row;
         align-items: center; }
-        /* line 763, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 768, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r2 h3 {
           padding: 0;
           margin: 0;
@@ -762,13 +767,13 @@ body {
           font-family: 'OpenSans-Light';
           font-size: 12px;
           color: #616161; }
-        /* line 771, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 776, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r2 .chaptotal {
           width: 30%;
           height: 5px;
           border-radius: 1px;
           background: rgba(40, 193, 249, 0.15); }
-        /* line 777, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+        /* line 782, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
         .root .content .lesson .r2 .chapcovered {
           height: 5px;
           float: left;
@@ -776,28 +781,28 @@ body {
           border-radius: 1px;
           background: #28c1f9; }
 
-/* line 790, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 795, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .leaderboard .header {
-  height: 8vh;
+  height: 10vh;
   background: #64C56E;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px; }
-  /* line 798, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 803, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard .header h1 {
     font-family: 'ProductSans-Regular';
     font-size: 22px;
     color: #FFFFFF;
     font-weight: normal;
     letter-spacing: 0.3px; }
-  /* line 805, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 810, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard .header input {
     opacity: 0;
     padding: 6px;
     font-size: 12px;
-    width: 60%;
+    width: 70%;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 2px;
@@ -805,10 +810,10 @@ body {
     transition: all 0.2s ease-in;
     display: none; }
 
-/* line 818, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+/* line 823, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
 .leaderboard div {
   padding: 16px; }
-  /* line 820, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 825, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard div h2 {
     font-family: 'OpenSans-Regular';
     font-size: 12px;
@@ -817,22 +822,22 @@ body {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px; }
-  /* line 829, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+  /* line 834, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
   .leaderboard div table {
     background: #fff;
     width: 100%;
     box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5); }
-    /* line 834, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 839, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr td {
       font-family: 'OpenSans-Regular';
       font-size: 14px;
       color: #616161;
       letter-spacing: 0.2px;
       padding: 24px 0px 24px 24px; }
-    /* line 841, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 846, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr .name {
       font-family: 'OpenSans-Semibold'; }
-    /* line 845, /Users/Abhishek/Playground/crowdcode/crowdcode/platforms/android/assets/www/css/style.scss */
+    /* line 850, /Users/Abhishek/Playground/crowdcode/crowdcode/www/css/style.scss */
     .leaderboard div table tr:nth-child(odd) {
       background-color: rgba(100, 197, 110, 0.05); }
 
