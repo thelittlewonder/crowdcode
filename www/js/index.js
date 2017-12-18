@@ -219,7 +219,7 @@ $('#chalo').hammer().on("tap", function () {
         $('.loader').css('display', 'block');
         var foo = setInterval(function () {
             console.log($('.progresspart').width());
-            if ($('.progresspart').width() > 150) {
+            if ($('.progresspart').width() > 120) {
                 clearInterval(foo);
                 window.location.href = "home.html";
             }

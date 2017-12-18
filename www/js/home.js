@@ -233,11 +233,3 @@ $('#ansv2').hammer().on('tap', function (e) {
 $('#variables2').hammer().on('tap', function (e) {
     window.location.href = "varcards2.html"
 });
-
-$('#variables3').hammer().on('tap', function (e) {
-    window.location.href = "varcards3.html"
-});
-
-$('#variables4').hammer().on('tap', function (e) {
-    window.location.href = "varcards4.html"
-});
