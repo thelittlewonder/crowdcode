@@ -120,6 +120,7 @@ window.onload = function () {
 
 $('#testvariables').hammer().on('tap', function () {
     setTimeout(function () {
+        $('#end').remove();
         $('.bars').remove();
         document.getElementById('test').style.display = "block";
         document.getElementById('test').style.opacity = 1;
@@ -127,7 +128,6 @@ $('#testvariables').hammer().on('tap', function () {
         $('#pane4').remove();
         document.getElementById('v1').style.opacity = 1;
     }, 200);
-    let card = (document.getElementById('testvariables').parentElement);
 });
 
 var v1answer;
@@ -184,3 +184,7 @@ if (document.getElementById('topicsearch') !== null) {
         });
     });
 }
+
+$('#variables1').hammer().on('tap', function (e) {
+    window.location.href = "varcards1.html"
+});

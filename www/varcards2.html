@@ -27,53 +27,62 @@
                 <img src="img/arrow.svg" style="opacity:0;">
             </div>
             <div id="cardsContainer" class="cardsContainer">
-                <div  class="cardswrapper">
+                <div class="cardswrapper">
                     <card class="card" id="pane1">
-                        <h1>The Concept of Variables</h1>
+                        <h1>Declaration</h1>
                         <hr class="divider">
-                        <img src="img/variable-1.svg">
-                        <p>Suppose you have a bowl and it contains hot soup. Here the container can be considered as a variable and the soup as the value, since it is stored in the bowl</p>
+                        <img src="img/variable-5.svg">
+                        <p>When you need a bowl, you go to the market to purchase one. Similarly, when we need a variable we have to ask the computer for one.</p>
                     </card>
                     <card class="card" id="pane2">
-                        <h1>The Concept of Variables</h1>
+                        <h1>Declaration</h1>
                         <hr class="divider">
-                        <img src="img/variable-2.svg">
-                        <p>You can change the contents of the bowl to a vegetable. So now the bowl contains vegetable, the value of the variable (bowl) is now updated.</p>
+                        <img src="img/variable-6.svg">
+                        <p>Since there are different types of bowls for different types of food. Similarly we have, different variable types for different data values.</p>
                     </card>
                     <card class="card" id="pane3">
-                        <h1>The Concept of Variables</h1>
+                        <h1>Declaration</h1>
                         <hr class="divider">
-                        <img src="img/variable-3.svg">
-                        <p>Every variable will have a name. For example, we can have a variable named myBowl.</p>
+
+                        <p>To store integers, we generally use int data type, which is declared as</p>
+                        <img src="img/variable-7.svg">
+                        <p>which is analogous to saying to a shopkeeper, give me a bowl that can store integers and I will call it myNumber</p>
                     </card>
                     <card class="card" id="pane4">
+                        <h1>Declaration</h1>
+                        <hr class="divider">
+                        <p>Similarly you can declare a variable to store words by using the keyword string.</p>
+                        <img src="img/variable-8.svg">
+                        <p>Every variable is identified by its name, myName here. The same way, you use the color or other features to distinguish the bowl</p>
+                    </card>
+                    <card class="card" id="pane5">
                         <h1>Summary</h1>
                         <hr class="divider">
-                        <p>A variable is a good way to store information while making it easy to refer to that information in our code later.</p>
-                        <button id="testvariables">Test your Knowledge</button>
+                        <p>First step of using a variable is to declare it, i.e purchasing the bowl from market to store food. Every variable has a name associated with it, which distinguishes it from other variables.</p>
+                        <button id="testvariables2">Test your Knowledge</button>
                     </card>
                     <h1 id="end">That's All in this chapter!</h1>
                 </div>
             </div>
-            <div class="question" id="v1">
-                <h1>Can we update the value of a variable?</h1>
-                <div id="v1a" class="option">A. True</div>
-                <div id="v1b" class="option">B. False</div>
-                <div id="v1c" class="option">C. Sometimes</div>
-                <div id="v1d" class="option">D. Only if it is a number</div>
-                <button id="ansv1">Submit</button>
+            <div class="question" id="v2">
+                <h1>Suppose you have to store your weight in a variable, how will you declare a variable?</h1>
+                <div id="v2a" class="option">A. string myWeight;</div>
+                <div id="v2b" class="option">B. myWeight;</div>
+                <div id="v2c" class="option">C. int myWeight;</div>
+                <div id="v2d" class="option">D. myWeight int;</div>
+                <button id="ansv2">Submit</button>
             </div>
             <div class="question result sahi">
                 <img src="img/right.svg">
                 <h1>That's Correct!<br><br>+10 Points</h1>
-                <div class="option">A. True</div>
-                <p>We can always update the value of a variable irrespective of its data type.</p>
+                <div class="option">C. int myWeight;</div>
+                <p>Since your weight has an integral value, we can store it in a integer type variable.</p>
             </div>
             <div class="question result galat">
                 <img src="img/wrong.svg">
                 <h1>That's Wrong!</h1>
                 <div class="option" id="itou"></div>
-                <p>We can always update the value of a variable.</p>
+                <p>Since your weight has an integral value, we can store it in a integer type variable.</p>
             </div>
         </div>
     </div>

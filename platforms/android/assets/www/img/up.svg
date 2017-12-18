@@ -4,13 +4,11 @@
     <title>ion-arrow-up-a - Ionicons</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="15" font-family="Ionicons" font-weight="400">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="home-copy" transform="translate(-74.000000, -127.000000)" fill="#64C56E">
             <g id="Dynamic-group" transform="translate(12.000000, 110.000000)">
                 <g id="12:12" transform="translate(12.000000, 12.000000)">
-                    <text id="ion-arrow-up-a---Ionicons">
-                        <tspan x="50" y="17"></tspan>
-                    </text>
+                    <polygon id="ion-arrow-up-a---Ionicons" points="55.625 5.75 61.25 11.375 57.96875 11.375 57.96875 17 53.28125 17 53.28125 11.375 50 11.375"></polygon>
                 </g>
             </g>
         </g>

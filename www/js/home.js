@@ -1,9 +1,7 @@
 document.addEventListener('deviceready', function () {
     StatusBar.backgroundColorByHexString('#28C1F9');
 });
-
 var currentCard = 1;
-
 if (document.getElementById('bars') !== null) {
     var bars = document.getElementById('bars').childNodes;
 }
@@ -145,13 +143,14 @@ $('#ansv1').hammer().on('tap', function (e) {
     $('#v1').css('opacity', 0);
     setTimeout(function () {
         $('#v1').remove();
-        if (v1answer === 'B. 12,457') {
+        if (v1answer === 'A. True') {
             $('.galat').remove();
             $('.cards').css('background-color', '#64C56E');
             $('.sahi').css('opacity', 1);
         } else {
             $('.sahi').remove();
             $('.cards').css('background-color', '#ED4C4C');
+            document.getElementById('itou').innerHTML = v1answer;
             $('.galat').css('opacity', 1);
         }
     }, 300);
@@ -179,6 +178,7 @@ if (document.getElementById('topicsearch') !== null) {
         $('.header h1').css('display', 'none');
         $('.header div').css('display', 'none');
         $('#topicsearch').css('display', 'block');
+        $('#topicsearch').focus();
         setInterval(function () {
             $('#topicsearch').css('opacity', 1);
         });
@@ -187,4 +187,57 @@ if (document.getElementById('topicsearch') !== null) {
 
 $('#variables1').hammer().on('tap', function (e) {
     window.location.href = "varcards1.html"
+});
+
+$('#testvariables2').hammer().on('tap', function () {
+    setTimeout(function () {
+        $('#end').remove();
+        $('.bars').remove();
+        document.getElementById('test').style.display = "block";
+        document.getElementById('test').style.opacity = 1;
+        $('#pane5').css('opacity', 0);
+        $('#pane5').remove();
+        document.getElementById('v2').style.opacity = 1;
+    }, 200);
+});
+
+var v2answer;
+$('.option').hammer().on('tap', function (e) {
+    var wut = document.getElementsByClassName('option');
+    let i;
+    for (i = 0; i < wut.length; i++) {
+        wut[i].classList.remove('got');
+    }
+    e.target.classList.add('got');
+    v2answer = e.target.innerHTML;
+});
+
+$('#ansv2').hammer().on('tap', function (e) {
+    $('#v2').css('opacity', 0);
+    setTimeout(function () {
+        $('#v2').remove();
+        if (v2answer === 'C. int myWeight;') {
+            $('.galat').remove();
+            $('.cards').css('background-color', '#64C56E');
+            $('.sahi').css('opacity', 1);
+        } else {
+            $('.sahi').remove();
+            $('.cards').css('background-color', '#ED4C4C');
+            document.getElementById('itou').innerHTML = v2answer;
+            $('.galat').css('opacity', 1);
+        }
+    }, 300);
+});
+
+
+$('#variables2').hammer().on('tap', function (e) {
+    window.location.href = "varcards2.html"
+});
+
+$('#variables3').hammer().on('tap', function (e) {
+    window.location.href = "varcards3.html"
+});
+
+$('#variables4').hammer().on('tap', function (e) {
+    window.location.href = "varcards4.html"
 });

@@ -18,4 +18,5 @@ $('#trigger').hammer().on('tap', function () {
     setInterval(function () {
         $('#leadsearch').css('opacity', 1);
     });
+    document.getElementById('leadsearch').focus();
 });
