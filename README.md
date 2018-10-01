@@ -1,6 +1,9 @@
 ![CrowdCode](https://raw.githubusercontent.com/littlewonder/crowdcode/master/res/readme/logo.png)
 
 Hybrid Mobile Application for TopCoder Humblefool Hackathon.
+🎉Won the first prize.
+
+[Read the blog](https://uxdesign.cc/learning-programming-should-not-be-hard-e422d6c401c0)
 
 [View the presentation](https://drive.google.com/file/d/1q4QxEi1h-QEQrgF_gLAvBJCCr7ilcGvS/view?usp=sharing)
 
